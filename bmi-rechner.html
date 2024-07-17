@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - BMI Rechner</title>
+ <meta name="description" content="Anne Dalchow - Portfolio - BMI Rechner">
+ <link rel="stylesheet" href="css/bmi-rechner.css">
+</head>
+
+<body>
+  <!--------HEADER-------------------------->
+<header> 
+  <nav>
+    <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+    <input type="checkbox" id="toggle_button">
+    <label for="toggle_button" class="toggle_button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+   
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About&nbsp;me</a></li>
+      <li class="expandable_li">
+        <input type="checkbox" id="work_checkbox">
+        <label for="work_checkbox">&#9776; Portfolio</label>
+        <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header> 
+  
+<ul class="breadcrumb">
+  <li><a href="portfolio.html">Portfolio</a></li>
+  <li><a href="project-webdesign.html">Web Design</a></li>
+  <li>BMI Rechner</li>
+</ul>
+
+
+<main class="bmi-rechner-site">
+  <div class="wrapper">
+    <h1>BMI Rechner</h1>
+  
+    <form>
+      <label for="groesse">Gebe hier deine Größe in cm an:</label>
+      <input id="groesse" type="number" placeholder="z.B.: 170" autocomplete="off">
+  
+      <label for="gewicht">Gewicht in kg (Kommazahlen bitte mit einem Punkt angeben):</label>
+      <input id="gewicht" type="number" placeholder="z.B.: 66.8" autocomplete="off">
+  
+      <button id="submit-button">Bestätigen</button>
+    </form>
+  
+    <div id="output-bmi">
+    </div>
+  
+    <div id="output-category">
+    </div>
+  
+    <div  class="img-category">
+      <img id="bmi-img" src="bilder/bmi-st-1326844049.png" alt="Bmi Kategorien Übersicht">
+    </div>
+  
+    <button id="reload-button">Neu laden</button>
+  </div>
+</main>
+
+
+<!--------FOOTER-------------------------->
+
+<footer id="side-footer">
+  <nav class="footer-nav">
+   <ul>
+    <li><a href="impressum.html">Imprint</a></li>
+    <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+  <div class="top"><a href="#top">&#8657;</a></div>
+</footer>
+
+
+
+
+<script src="js/bmi.js"></script>
+</body>
+</html>

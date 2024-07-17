@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Portfolio</title>
+ <meta name="description" content="Anne Dalchow - Portfolio">
+
+ <link href="css/style.css" rel="stylesheet" media="all">
+ <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
+
+ <style>
+   .hidden-portfolio {
+     visibility: hidden;
+     opacity: 0;
+     height: 0; /* Höhe auf 0 setzen */
+   }
+   .fade-in-portfolio {
+     opacity: 1;
+     visibility: visible;
+     height: auto; /* Höhe zurücksetzen */
+     transition: opacity 2s ease-in, height 2s ease-in; /* Übergang für Höhe hinzufügen */
+   }
+  
+ </style>
+</head>
+
+<body>
+ <!--------HEADER-------------------------->
+ <header> 
+  <nav>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <input type="checkbox" id="toggle_button">
+   <label for="toggle_button" class="toggle_button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </label>
+
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About&nbsp;me</a></li>
+    <li class="expandable_li">
+      <input type="checkbox" id="work_checkbox">
+      <label for="work_checkbox">&#9776; Portfolio</label>
+         <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+</header> 
+
+ <!-------------------MAIN----------------------->
+
+ <main class="background-dark" id="page-background">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li>Portfolio</li>
+  </ul>
+  <section id="site-hero-dark">
+    <div class="inside">
+      <h1>Portfolio</h1>
+      <hr>
+      <div class="dropdown-projectsites">
+        <button class="dropbtn">Overview </button>
+          <div class="dropdown-content">
+            <a href="#" class="current">All</a>
+            <a href="project-webdesign.html">Webdesign</a>
+            <a href="project-prints.html">Prints</a>
+            <a href="project-illustration.html">Graphics</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------- Slider ---------------------->
+
+  <section class="project-work-slider">
+    <div class="slideshow-container">
+        <div class="slide">
+          <img src="/bilder/Vorschau/Mockup_website_Zeichenfläche 1.png" alt="Mockup Webseiten">
+            <div class="slide-textbereich">
+              <h2 class="slide-ueberschrift"> 
+               Web Design
+              </h2>
+              <div class="slide-button">
+                <a  href="project-webdesign.html">View Projects</a>
+              </div>
+            </div>
+        </div>
+         
+        <div class="slide">
+          <img src="/bilder/Vorschau/Mockup_prints_Zeichenfläche 1.png" alt="thread-counter von markusspiske auf pixabay">
+            <div class="slide-textbereich">
+              <h2 class="slide-ueberschrift"> 
+               Print Design
+              </h2>
+              <div class="slide-button">
+                <a  href="project-prints.html">View Projects</a>
+              </div>
+            </div>
+        </div>
+         
+        <div class="slide">
+          <img src="/bilder/Vorschau/Mockup_graphics_Zeichenfläche 1.png" alt="Motte">
+            <div class="slide-textbereich">
+              <h2 class="slide-ueberschrift"> 
+               Graphic Design
+              </h2>
+              <div class="slide-button">
+                <a  href="project-illustration.html">View Projects</a>
+              </div>
+            </div>
+        </div>
+      </div>
+
+<div class="media-items">
+        <div class="dotlist">
+          <ol>
+            <li class="dots" onclick="springeZuEintrag(0)">&#8226;</li>
+            <li class="dots" onclick="springeZuEintrag(1)">&#8226;</li>
+            <li class="dots" onclick="springeZuEintrag(2)">&#8226;</li>
+          </ol>
+        </div>
+  
+        <div class="mediabuttons">
+          <a class="pfeil pfeil-links" onclick="umschalten(-1)"><span>&#10094;</span></a>
+          <a id="stop-btn"><span>||</span></a>
+          <a id="play-btn"><span>&#9205;</span></a>
+          <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
+        </div>
+</div>
+
+  </section>
+
+<!--------------------- Gallery ---------------------->
+
+ <section id="work">
+
+  <div class="row">
+    <div id="lightbox">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-image">
+      <a class="prev" onclick="prevImage()">&#10094;</a>
+      <a class="next" onclick="nextImage()">&#10095;</a>
+    </div>
+    <div class="column">
+      <img src="bilder/prototyp_ansichtquer_Zeichenfläche 1.png" alt="" width="500" height="700" onclick="openLightbox('bilder/prototyp_ansichtquer_Zeichenfläche 1.png')">
+      <img src="bilder/Galerie/Autumn_Illu_500x700.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Autumn_Illu_500x700.png')">
+      <img src="bilder/shirts/Shirts_Var4.png" alt="" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var4.png')">
+      <img src="bilder/Galerie/Illu_Sonne.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Glühmond.png')">
+    </div>
+    <div class="column">
+      <img src="bilder/todo app.png" alt="" width="500" height="700" onclick="openLightbox('bilder/abstract-6047465.jpg')">
+      <img src="bilder/Galerie/Tag und Nacht_abgeschlossen.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Tag und Nacht_abgeschlossen.png')">
+      <img src="bilder/Galerie/universe-02.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/FB_IMG_1555167081715.jpg')">
+      <img src="bilder/Kassette_var3.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Kassette_var3.png')">
+    </div>
+    <div class="column">
+      <img src="bilder/spline_roboter_Zeichenfläche 1.svg" alt="" width="500" height="700" onclick="openLightbox('bilder/spline_roboter_Zeichenfläche 1.svg')">
+      <img src="bilder/Galerie/Frau_Illustration_Zeichenfläche 1.png" alt="" width="500" height="700" onclick="openLightbox('bilder/todo app.png')">
+      <img src="bilder/shirts/Shirts_Var2.png" alt="" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var2.png')">
+      <img src="bilder/Galerie/universe-03.png" alt="Laptop und Handy Vektorillustration" width="500" height="700" onclick="openLightbox('bilder/Prototypen Handy-01-01-01.png')">
+    </div>
+    <div class="column hidden-portfolio">
+      <img src="bilder/Kassette_var2.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Kassette_var2.png')">
+      <img src="bilder/shirts/Shirts_Var1.png" alt="" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var1.png')">
+      <img src="bilder/Galerie/Glühmond.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Glühmond.png')">
+      <img src="bilder/Galerie/neon_light_effect.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/neon_light_effect.png')">
+    </div>
+    <div class="column hidden-portfolio">
+      <img src="bilder/BMI Rechner.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Illu_700x300.png')">
+      <img src="bilder/Webseite Kassette.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Webseite Kassette.png')">
+      <img src="bilder/Galerie/Illu_Welt.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Illu_Welt.png')">
+      <img src="bilder/Galerie/Mensch Farbe.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Mensch Farbe.png')">
+    </div>
+    <div class="column hidden-portfolio">
+      <img src="bilder/Galerie/Poster.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Poster.png')">
+      <img src="bilder/Galerie/Motte.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Motte.png')">
+      <img src="bilder/Galerie/Visitenkarte.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Visitenkarte.png')">
+      <img src="bilder/shirts/Shirts_Var5.png" alt="" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var5.png')">
+    </div>
+  </div>
+  <button id="load-more" onclick="loadMore()">Load More</button>
+ </section>
+</main>
+
+<!--------FOOTER-------------------------->
+
+<footer id="side-footer">
+  <nav class="footer-nav">
+   <ul>
+    <li><a href="impressum.html">Imprint</a></li>
+    <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+  <div class="top"><a href="#top">&#8657;</a></div>
+</footer>
+
+<script src="js/lightbox.js"></script>
+<script src="js/carousel.js"></script>
+
+<script>
+  function loadMore() {
+    const hiddenColumns = document.querySelectorAll('.column.hidden-portfolio');
+    hiddenColumns.forEach((column, index) => {
+      setTimeout(() => {
+        column.classList.remove('hidden-portfolio');
+        column.classList.add('fade-in-portfolio');
+      }, index * 500); // sanftes Delay 
+    });
+    document.getElementById('load-more').style.display = 'none';
+  }
+</script>
+</body>
+</html>

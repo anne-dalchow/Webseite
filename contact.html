@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Contact</title>
+ <meta name="description" content="Anne Dalchow - Contact">
+ <link href="css/style.css" rel="stylesheet" media="all">
+ <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
+</head>
+
+<body>
+
+ <!--------HEADER-------------------------->
+ <header> 
+  <nav>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <input type="checkbox" id="toggle_button">
+   <label for="toggle_button" class="toggle_button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </label>
+
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About&nbsp;me</a></li>
+    <li class="expandable_li">
+      <input type="checkbox" id="work_checkbox">
+      <label for="work_checkbox">&#9776; Portfolio</label>
+         <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+</header> 
+
+ <!--------MAIN-------------------------->
+<main class="background-dark" id="page-background">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li>Contact</li>
+  </ul>
+  <section id="site-hero-dark">
+    <div class="inside">
+      <h1>Contact</h1>
+      <hr>
+    </div>
+</section>
+
+ <!--------CONTACT-------------------------->
+
+<section id="contact">
+  <div class="contact-img">
+    <img src="bilder/contactme_Zeichenfläche 1.svg" alt="">
+  </div>
+  <div class="contact-textbox">
+    <p>Feel free to contact me</p>
+    <br>
+    <p>Anne Dalchow <br>
+       Klemmstraße 8 <br>
+       04277 Leipzig <br>
+       <br>
+       Telefon: +49 177 344 79 73 <br>
+       E-Mail: anne.dalchow@web.de <br>
+    </p>
+    <br>
+    <div class="link-icons">
+     <a href="https://github.com/anne-dalchow"><img src="bilder/minimize/github-01.svg" alt="Github Icon"></a>
+     <a href="https://www.linkedin.com/in/anne-dalchow/"><img src="bilder/minimize/linkedIn-01.svg" alt="LinkedIn Icon"></a>
+    </div>
+  </div>
+
+
+
+<!--
+ <div class="contact-form">
+   <form action="">
+    <input class="input-text" type="text" placeholder="*Name" required> <br>
+    <input class="input-text" type="email" placeholder="*E-Mail" required> <br>
+    <input class="input-text" type="text" placeholder="*Betreff" required> <br>
+    <textarea class="input-text" placeholder="*Nachricht" required></textarea> <br>
+    <div class="datenschutz">
+      <input type="checkbox" name="datenschutz" id="datenschutz" value="DS akzeptiert" required>
+        <div class="datenschutz-text">
+          * Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> zur Kenntnis genommen und akzeptiere diese.
+        </div>
+    </div> <br>
+    <input class="button" type="submit">
+   </form>
+ </div>
+ -->
+
+</section>
+
+</main>
+<!--------FOOTER-------------------------->
+
+<footer id="side-footer">
+  <nav class="footer-nav">
+   <ul>
+    <li><a href="impressum.html">Imprint</a></li>
+    <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+  <div class="top"><a href="#top">&#8657;</a></div>
+</footer>
+</body>
+</html>

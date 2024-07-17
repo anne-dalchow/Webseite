@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 936.4 834.1">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #bfac76;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        display: none;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        fill-opacity: 0;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 558)  -->
+  <g>
+    <g id="Ebene_1">
+      <g id="Bg" class="cls-4">
+        <rect class="cls-5" x="-1344.2" y="-305.1" width="3465" height="1443.8"/>
+      </g>
+      <g id="Layer_1">
+        <path class="cls-3" d="M467.8,804.7c213.7,0,387.9-174.2,387.9-387.9S681.4,28.9,467.8,28.9,79.9,203.2,79.9,416.8c0,213.7,174.2,387.9,387.9,387.9Z"/>
+        <path class="cls-2" d="M235.7,239c0-30.3,24.6-54.9,54.8-54.9s54.8,24.6,54.8,54.9-24.6,54.8-54.8,54.8-54.8-24.5-54.8-54.8Z"/>
+        <rect class="cls-1" x="242.7" y="340" width="95.6" height="309.4"/>
+        <path class="cls-2" d="M688.1,401.2c-6.5-14.2-13.6-27.7-26.1-37.7-12.1-9.8-26.2-18.9-41.2-23.5-17-5.2-29.6-6.2-47.3-5.5-35.1,1.5-74.1,21.6-93.8,50.5v-45h-87.9v309.4h93.3v-166c0-1.7.4-29.8,21.1-48.4,25.6-23.1,100.1-24.4,100.1,46.2l-.2,168.3h93.8v-199.7c-.1-16.7-4.9-33.7-11.8-48.6Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Webdesign</title>
+ <meta name="description" content="Anne Dalchow - Portfolio Webdesign">
+ <link href="css/style.css" rel="stylesheet" media="all">
+ <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
+</head>
+<body>
+ <!--------HEADER-------------------------->
+ <header> 
+  <nav>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <input type="checkbox" id="toggle_button">
+   <label for="toggle_button" class="toggle_button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </label>
+
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About&nbsp;me</a></li>
+    <li class="expandable_li">
+      <input type="checkbox" id="work_checkbox">
+      <label for="work_checkbox">&#9776; Portfolio</label>
+         <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+</header> 
+
+ <!-------------------MAIN----------------------->
+
+ <main class="background-dark" id="page-background">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="project-webdesign.html">Web Design</a></li>
+    <li>JavaScript</li>
+  </ul>
+  <section id="site-hero-dark">
+    <div class="inside">
+      <h1>JS Anwendungen</h1>
+      <hr>
+      <div class="dropdown-projectsites">
+        <button class="dropbtn">Overview </button>
+          <div class="dropdown-content">
+            <a href="portfolio.html">All</a>
+            <a href="#" class="current">Webdesign</a>
+            <a href="project-prints.html" >Prints</a>
+            <a href="project-illustration.html">Graphics</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="wrapper-project-work">
+    <section class="project-work-first-section">
+      <div class="project-webdesign-img">
+        <img src="bilder/mockups js_oben_Zeichenfläche 1.png" alt="Mockup Handy mit zwei JavaScript Anwendungen "  width="" height="">
+      </div>
+      
+      <div class="project-text-container-webdesign">
+          <a href="#todo">
+            <div class="project-headlines">
+              <div>
+                <h2>01</h2>
+              </div>
+              <div>
+                <h2>To Do List</h2>
+              </div>
+            </div>
+          </a>
+          <a href="#bmirechner">
+            <div class="project-headlines">
+              <div>
+                <h2>02</h2>
+              </div>
+              <div>
+                <h2>BMI Rechner</h2>
+              </div>
+            </div>
+          </a>
+          <a href="#spaceshooter">
+            <div class="project-headlines">
+              <div>
+                <h2>03</h2>
+              </div>
+              <div>
+                <h2>Space Shooter</h2>
+              </div>
+            </div>
+          </a>
+      </div>
+    </section>
+  
+    <section class="webdesign-projekte" id="todo">
+     <div class="webdesign-text-container">
+       <h4>Projekt 1:To Do List</h4> <br>
+       <p>
+         Beschreibung: Hier habe ich eine To Do Listen Anwendung mit HTML, CSS und JavaScript geschrieben.
+         Diese ermöglicht dem Nutzer mit eigenen Eingaben eine Liste zu erstellen, welche er mit Checkboxen als erledigt vermerken kann.
+          <br> <br>
+          Technologien: HTML, CSS, JavaScript<br> <br>
+         <a class="button-webdesign-project" href="todo-app.html"><button>Teste die Todo App &#129094;</button></a>
+       </p>
+      </div>
+      <div class="webdesign-img-container">
+       <a href="todo-app.html"><img src="bilder/todo app.png" alt="Vorschau BMI Rechner App"></a>
+       <div style="margin-top: 10px;">
+        <p style="color: whitesmoke; text-align: right;">Code on <a href="https://github.com/anne-dalchow/todo-App.git "style="color: rgb(204, 175, 102);">Github</a></p>
+       </div>
+     </div>
+    </section>
+  
+    <section class="webdesign-projekte" id="bmirechner">
+     <div class="webdesign-text-container">
+       <h4>Projekt 2: BMI Rechner</h4> <br>
+       <p>
+         Beschreibung: Diese Anwendung soll den BMI des Nutzenden berechnen. Die Auswertung der Eingaben erfolgte mit JavaScript und einer Berechnung auf Grundlage der BMI Berechnungsformel. <br>
+         Zudem wurde mit einer Switch Case Schleife der errechnete BMI der jeweiligen Kategorie abgefragt und für den Anwendenden ausgegeben. <br> <br>
+         Technologien: HTML, CSS, JavaScript<br> <br>
+         <a class="button-webdesign-project" href="bmi-rechner.html"><button>Berechne deinen BMI &#129094;</button></a>
+       </p>
+     </div>
+     <div class="webdesign-img-container">
+       <a href="bmi-rechner.html"><img src="bilder/BMI Rechner.png" alt="Vorschau BMI Rechner App"></a>
+       <div style="margin-top: 10px;">
+        <p style="color: whitesmoke; text-align: left;">Code on <a href="https://github.com/anne-dalchow/bmi-rechner.git" style="color: rgb(204, 175, 102);">Github</a></p>
+       </div>
+     </div>
+    </section>
+
+    <section class="webdesign-projekte" id="spaceshooter">
+     <div class="webdesign-text-container">
+       <h4>Projekt 3: Space Shooter (PC only)</h4> <br>
+       <p>
+         Beschreibung: Ein Space Shooter Game basierend auf dem PIXI JavaScript Framework. Aufgebaut auf folgendem <a style="color: var(--secondcolor);" href="https://www.youtube.com/watch?v=YGlJsgdgHuw">Tutorial</a> und mit eigenen Funktionen erweitert, wie eine Anpassung des Schwierigkeitsgrads die durch ein Intervall mit der Zeit immer weiter erhöht wird. Zudem designtechnische Änderungen, Erweiterung des Arrays um verschiedene Ufo Modelle randomisiert zu erzeugen und ein durchlaufender Sternenhimmel im Hintergrund.
+          <br> <br>
+          Technologien: HTML, JavaScript<br> <br>
+
+         <a class="button-webdesign-project" href="/shooter-js/space-shooter.html"><button>Zum Spiel &#129094;</button></a>
+       </p>
+      </div>
+      <div class="webdesign-img-container">
+       <a href="/shooter-js/space-shooter.html"><img src="bilder/space_shooter.png" alt="Vorschau Space Shooter Spiel"></a>
+       <div style="margin-top: 10px;">
+        <p style="color: whitesmoke; text-align: right;">Code on <a href="https://github.com/anne-dalchow/Space-Shooter-Game-2D.git" style="color: rgb(204, 175, 102);">Github</a></p>
+       </div>
+     </div>
+    </section>
+
+    
+  <div class="pre-back-buttons">
+    <button><a href="project-webdesign.html"> <img class="arrowsRightLeft" src="icons/arrow left.png" alt="Zurück zum Webdesign"> Webdesign </a></button>
+    <button><a href="portfolio.html">Overview <img class="arrowsRightLeft" src="icons/arrow right.png" alt="Zur Übersicht"></a></button>
+  </div>
+
+  </main>
+  
+  <!--------FOOTER-------------------------->
+  
+  <footer id="side-footer">
+    <nav class="footer-nav">
+     <ul>
+      <li><a href="impressum.html">Imprint</a></li>
+      <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     </ul>
+    </nav>
+    <div class="top">&#8657;</a></div>
+  </footer>
+  
+  <script src="/js/slidein.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+:root{
+ --maincolor:rgba(34, 34, 34, 1);
+ --maincolor-darker:rgb(22, 22, 22);
+ --maincolor-lighter:rgb(51, 51, 51);
+ --secondcolor: rgba(191, 172, 118, 1);
+ --whitecolor: rgba(208, 208, 208, 1);
+ --accentcolor: rgb(165, 135, 78);
+}
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+/**** FONT POPPINS ****/
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 400;
+ src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/**
+html {
+ scroll-behavior: smooth;
+ font-family:'Poppins';
+ font-size: 16px;
+ color: var(--whitecolor);
+}
+
+
+body{
+
+ padding: 10px;
+ background-color: rgb(20, 20, 20);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+*/
+h1{
+ margin: 100px 0 20px 0;
+ font-size: 3rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ text-align: center;
+ color: var(--secondcolor);
+}
+
+.todo-list-site{
+ background-color: var(--maincolor);  
+ min-height: 90vh;
+}
+.todolist-wrapper{
+ width: 700px;
+ max-width: 90%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 10px;
+  margin:0 auto 200px auto;
+  padding: 0px 20px;
+}
+.todolist-textfield{
+ padding: 50px;
+}
+.todolist-textfield h1{
+  font-family: 'Poppins';
+  font-variant: small-caps;
+}
+.todolist-textfield p{
+  color: var(--whitecolor);
+}
+#todo-input{
+ box-sizing: border-box;
+ padding: 20px 30px;
+ margin: 0;
+ width: 100%;
+ background: none;
+ border: 2px solid var(--maincolor-lighter);
+ border-radius: 1000px;
+ font-family: 'Poppins';
+ font-size: 1rem;
+ color: var(--whitecolor);
+ caret-color: var(--accentcolor);
+}
+
+#todo-input:focus{
+ outline: none;
+}
+
+form{
+ position: relative;
+}
+
+#add-button{
+ position: absolute;
+ top: 0;
+ right: 0;
+
+ background-color: var(--secondcolor);
+ height: 100%;
+ padding: 0 30px;
+ border: none;
+ border-radius: 1000px;
+ font-family: 'Poppins';
+ font-size: 1rem;
+ color: var(--maincolor);
+ cursor: pointer;
+}
+
+.todo{
+ margin-bottom: 10px;
+ padding: 0 16px;
+ background-color: var(--maincolor-lighter);
+ border-radius: 15px;
+ display: flex;
+ align-items: center;
+}
+
+.todo .todo-text{
+ padding: 15px;
+ padding-right: 0;
+ flex-grow: 1;
+ transition: 500ms ease;
+}
+
+.delete-button{
+ padding: 3px;
+ background: none;
+ border: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+}
+
+.delete-button svg{
+ transition: 500ms ease;
+}
+
+.delete-button:hover svg{
+ fill: rgb(160, 27, 27);
+}
+
+.custom-checkbox{
+ border: 2px solid var(--secondcolor);
+ border-radius: 50%;
+ min-height: 20px;
+ min-width: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-shrink: 0;     /*soll nicht verändert werden in höhe und breite*/
+ transition: 500ms ease;
+ cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox{
+ background-color: var(--secondcolor);
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox svg{
+ fill: var(--maincolor);
+}
+
+input[type="checkbox"]:checked ~ .todo-text{
+ text-decoration: line-through;
+ color: var(--maincolor-darker);
+}
+
+input[type="checkbox"]{
+ display: none;
+}
+
+@media(max-width: 500px){
+  .todolist-textfield{
+    padding: 15px;
+  }
+  .todolist-textfield h1{
+    font-size: 2rem;
+  }
+
+ #add-button{
+  position: unset;
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  height: auto;
+ }
+
+ h2{
+  margin-top: 50px;
+  font-size: 2.5rem;
+ }
+}

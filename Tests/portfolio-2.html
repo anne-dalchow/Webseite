@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de" id="top" >
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Portfolio</title>
+ <meta name="description" content="Anne Dalchow - Portfolio">
+ <link href="css/style.css" rel="stylesheet">
+
+ <style>
+  .toggle {
+    margin:0 auto;
+    position: relative;
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+}
+
+.toggle input {
+    display: none;
+}
+
+.roundbutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    display: block;
+    transition: all 0.3s;
+    border-radius: 3.4rem;
+    cursor: pointer;
+
+}
+
+.roundbutton:before {
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100%;
+    display: block;
+    left: 0.5rem;
+    bottom: 0.25rem;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+input:checked + .roundbutton {
+    background-color: rgb(165, 135, 78);
+}
+
+input:checked + .roundbutton:before  {
+    transform: translate(2.6rem, 0);
+}
+ </style>
+</head>
+
+<body>
+ <!--------HEADER-------------------------->
+
+ <header> 
+  <nav>
+    <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+    <input type="checkbox" id="toggle_button">
+    <label for="toggle_button" class="toggle_button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Über&nbsp;mich</a></li>
+        <li class="expandable_li">
+          <input type="checkbox" id="work_checkbox">
+          <label for="work_checkbox">Portfolio&nbsp;&nbsp;&#11206;</label>
+          <ul class="dropdown">
+            <li><a href="portfolio.html">Übersicht</a><hr class="hr-nav"></li>
+            <li><a href="project-webshop.html">Webdesign</a><hr class="hr-nav"></li>
+            <li><a href="project-graphicdesign.html">Printdesign</a><hr class="hr-nav"></li>
+            <li><a href="project-illustration.html">Prints</a><hr class="hr-nav"></li>
+            <li><a href="project-printdesign.html">Illustration</a></li>
+          </ul>
+      </li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+</nav>
+</header> 
+
+ <!-------------------MAIN----------------------->
+
+ <main class="background-dark" id="page-background">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li>Portfolio</li>
+  </ul>
+   <section id="site-hero-dark">
+     <div class="inside">
+       <h2>Portfolio</h2>
+       <hr>
+       <div class="inside-button">
+          <a href="#project-presentation"><button>Projekte</button></a>
+          <a href="#work"><button>Galerie</button></a>
+       </div>
+     </div>
+  </section>
+
+<!------------- PROJEKT PRENSENTATION--------------------->
+
+
+<!-- entferntes CSS für project presentation:
+ 
+/****** 4.1 Project Presentation ******/
+
+#project-presentation{
+  max-width: 1250px;
+  margin: 5% auto 5% auto;
+  padding: 0 10px;
+}
+
+#project-presentation h3{
+  padding-top: 0;
+  color: var(--secondcolor);
+  background-color: var(--maincolor);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#project-presentation #presentation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3%;
+}
+
+#presentation div {
+  width: 22%;
+  border: 1px solid var(--secondcolor);
+  border-radius: 50px 0px;
+  background: linear-gradient(360deg, rgb(238, 238, 238) 70%, rgba(34,34,34,1) 30%);
+}
+
+#presentation div figure {
+  display: flex;
+  flex-flow:column ;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+#presentation div figure img{
+  margin-bottom: 0px;
+  width: 70%;
+}
+
+#presentation div figure a button{
+  cursor: pointer;
+  padding: 5px 20px;
+  margin-bottom:20px;
+}
+
+#presentation div figure a button:hover{
+ background-color: var(--maincolor);
+ color: var(--secondcolor);
+}
+-->
+
+<section id="project-presentation" >
+  <h3>Aktuelle Projekte</h3>
+  <hr> <br> <br>
+ <div id="presentation">
+  <div >
+    <figure>
+      <img src="bilder/minimize/webdesign_logo_Zeichenfläche 1.png" alt="Webdesign Piktogramm" /> 
+      <figcaption>
+        <h4>Webdesign</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut fugiat molestias distinctio optio nihil aspernatur.</p> </figcaption>
+        <a href="project-webshop.html"> <button>Zum Projekt</button></a>
+    </figure>
+  </div>
+  <div >
+   <figure>
+     <img src="bilder/minimize/grafikdesign_logo_Zeichenfläche 1.png" alt="Grafikdesign Piktogramm" />
+     <figcaption>
+      <h4>Print Design</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut fugiat molestias distinctio optio nihil aspernatur.</p> </figcaption>
+      <a href="project-graphicdesign.html"> <button>Zum Projekt</button></a>
+   </figure>
+  </div>
+  <div >
+    <figure>
+      <img src="bilder/minimize/printdesign_logo_Zeichenfläche 1.png" alt="Printdesign Piktogramm" />
+      <figcaption>
+        <h4>Print Technology</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut fugiat molestias distinctio optio nihil aspernatur.</p> </figcaption>
+        <a href="project-printdesign.html"> <button>Zum Projekt</button></a>
+    </figure>
+  </div>
+  <div >
+    <figure>
+      <img src="bilder/minimize/illustration_logo_Zeichenfläche 1.png" alt="Illustration Piktogramm" />
+      <figcaption>
+        <h4>Illustration</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut fugiat molestias distinctio optio nihil aspernatur.</p> </figcaption>
+        <a href="project-illustration.html"> <button>Zum Projekt</button></a>
+    </figure>
+  </div>
+ </div>
+</section>
+
+<!--------------------- Gallery ---------------------->
+
+ <section id="work">
+  <h3>Galerie</h3>
+  <hr>
+   
+    <div class="row">
+      <div class="column">
+        <img src="https://via.placeholder.com/400x200">
+        <img src="https://via.placeholder.com/250x200">
+        <img src="https://via.placeholder.com/250x200">
+        <img src="https://via.placeholder.com/250x200">
+      </div>
+       <div class="column">
+        <img src="https://via.placeholder.com/250x200">
+        <img src="https://via.placeholder.com/250x200">
+        <img src="https://via.placeholder.com/250x200">
+        <img src="https://via.placeholder.com/400x200">
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/400x200">
+        <img src="https://via.placeholder.com/250x200">
+        <img src="https://via.placeholder.com/250x200">
+        <img src="https://via.placeholder.com/250x200">
+      </div>
+
+     <label class="toggle">
+       <input id="toggleswitch" type="checkbox">
+       <span class="roundbutton"></span>
+     </label>
+    </div>
+
+ </section>
+
+
+<!--------FOOTER-------------------------->
+
+<footer id="side-footer">
+  <nav class="footer-nav">
+   <ul>
+    <li><a href="impressum.html">Impressum</a></li>
+    <li><a href="datenschutz.html">Datenschutz</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+   </ul>
+  </nav>
+  <div class="top"><a href="#top">&#8686;</a></div>
+ </footer>
+
+</main>
+</body>
+
+
+
+<script>
+
+let columns = document.querySelectorAll(".column");
+let lastColumn = columns[columns.length - 1];
+lastColumn.style.display = 'none';
+
+let input = document.getElementById('toggleswitch');
+
+ 
+     input.addEventListener('change',function(){
+         if(this.checked) {
+          lastColumn.style.display = 'flex';
+         } else {
+          lastColumn.style.display = 'none';
+         }
+     });
+
+
+
+
+ 
+ </script>
+
+</html>

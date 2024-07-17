@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Webdesign</title>
+ <meta name="description" content="Anne Dalchow - Portfolio Webdesign">
+ <link href="css/style.css" rel="stylesheet" media="all">
+ <link rel="stylesheet" href="css/appdesign.css" media="all">
+ <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
+
+ <style>
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .lightbox-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+  .lightbox-img {
+    max-width: 90%; 
+    max-height: 90%; 
+    margin: auto; 
+  }
+
+</style>
+</head>
+<body>
+ <!--------HEADER-------------------------->
+ <header> 
+  <nav>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <input type="checkbox" id="toggle_button">
+   <label for="toggle_button" class="toggle_button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </label>
+
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About&nbsp;me</a></li>
+    <li class="expandable_li">
+      <input type="checkbox" id="work_checkbox">
+      <label for="work_checkbox">&#9776; Portfolio</label>
+         <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+</header> 
+
+ <!-------------------MAIN----------------------->
+
+<main class="background-dark" id="page-background">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="project-webdesign.html">Web Design</a></li>
+    <li>App Design</li>
+  </ul>
+  <section id="site-hero-dark">
+    <div class="inside">
+      <h1>App Design</h1>
+      <hr>
+      <div class="dropdown-projectsites">
+        <button class="dropbtn">Overview <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="portfolio.html">All</a>
+            <a href="project-webdesign.html" >Webdesign</a>
+            <a href="project-prints.html">Prints</a>
+            <a href="project-illustration.html">Graphics</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="wrapper-project-appdesign">
+    <section class="project-appdesign-first-section">
+      <div class="project-appdesign-img">
+        <img src="/bilder/Prototypen Handy-01.png" alt="Mockup Webdesign auf unterschiedlichen Geräten" width="auto" height="auto">
+      </div>
+      <div class="project-text-container-appdesign">
+        <h2>Mindful Path</h2>
+        <p>App Design | UX / UI Design | Prototyping</p>
+        <hr>
+        <br>
+        <br>
+        <p>Im Rahmen meiner Weiterbildung im Modul AppDesign habe ich einen Prototypen einer ToDo-App entwickelt, die vor allem ein Augenmerk auf eine ausgeglichene Tagesstruktur hat.</p>
+        <p>Hierfür nutzte ich Tools aus dem UX & UI Design (Strategische Ziele, Umfang, Struktur, Layout/Inhalt, Visuelle Gestaltung) und erarbeitet in Figma einen vorläufigen Prototypen.</p>
+      </div>
+    </section>
+    <section class="project-appdesign-taskdescription">
+      <div class="project-appdesign-description">
+        <h3>"First things first"<br>Die Zielgruppenanalyse</h3>
+        <hr>
+        <p>
+        Mit der Idee, eine Todo App aufzubauen, stellte ich mir die Frage, welchen Nutzen kann es denn für Menschen bieten? Wie kann sich das Produkt von den weiteren Todo Apps, die auf dem Markt kursieren, abheben? Und für wen sollte diese App überhaupt sein?</p> <br>
+        <span class="italic-font">"Bit by bit"
+        <hr>
+      </span>
+
+        <p>Die Zielgruppe: <br> Alle erwachsenen Personen, die ihre Aufgaben strukturieren und ihre Tages/Wochenstrukturierung optimieren wollen, da sie das Gefühl haben das etwas unausgeglichen ist in ihrem Leben (fühlen sich gestresst, unglücklich, etc.)</p>
+        <p> <br>
+          Die Zielsetzung: <br> Diese App soll den Nutzenden mit Tools wie Wochenanalyse, Stimmungstagebuch und Meditationsübungen unterstützen, ihre Tages-/Wochenstrukturierung zu optimieren und vorallem eine ausgeglicheneren individuellen Weg für sich zu entwickeln.</p>
+        </p> <br>
+        <p>Daraufhin entwickelte ich eine Persona, um die Bedürfnisse zu konkretisieren und die Hauptkriterien für die App herauszuarbeiten.</p>
+      </div>
+      <div class="project-appdesign-description">
+        <div class="project-appdesign-inside">
+          <img src="bilder/zielgruppe.svg" alt="Perspektivendefinition Zielorientierung Organisation der Teamarbeit Zeichentrickfiguren">
+          <p style="text-align: center; font-size: 0.8rem; color: rgb(183, 183, 183);">Bild von <a href="https://de.freepik.com/vektoren-kostenlos/personalmanagement-perspektivendefinition-zielorientierung-organisation-der-teamarbeit-business-coach-geschaeftsfuehrer-und-personal-zeichentrickfiguren_12084748.htm#query=ziel&position=7&from_view=keyword&track=ais_user&uuid=bf882623-060b-41ed-a766-95b5bbbff2fe" style="color: var(--secondcolor);font-size: 0.8rem;">vectorjuice</a> auf Freepik</p>
+        </div>
+      </div>
+      <div class="project-appdesign-description">
+        <img src="bilder/struktur-02.svg" alt="Vereinfachte-Ansicht der Seitenstrukturierung und des Aufbaus der App" onclick="openLightbox('bilder/struktur-02.svg')" id="lightbox-img">
+        <!-- Lightbox -->
+      <div id="lightbox" style="display: none;">
+        <span onclick="closeLightbox()" class="close-btn">X</span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <p style="text-align: center; color: rgb(183, 183, 183);font-size: 0.8rem;">Vereinfachte Ansicht der Seitenstrukturierung</p>
+        
+      </div>
+      <div class="project-appdesign-description">
+        <h3>Strukturierung & Aufbau</h3>
+        <hr>
+        <p>Ziel einer ansprechenden UX ist es, Benutzende möglichst nahtlos an das Nutzungsziel zu bringen.</p> <br>
+        <p> <ul>Dazu sind folgende Faktoren vorab zu überlegen und auf die Bedürfnisse zuzuschneiden: 
+          <li> <br></li>
+          <li>- Content (z. B. zielgruppenorientierte Texte und Bildmaterial)</li>
+          <li>- Animationen (z. B. Übergänge oder Microanimations)</li>
+          <li>- Informationsarchitektur (Seitenaufbau, Navigation, Module/Kategorien)</li>
+          <li>- Usability (z. B. generelle Nutzerfreundlichkeit und intuitive Bedienung)</li>
+        </ul></p>
+      </div>
+      
+      <div class="project-appdesign-description">
+        <h3>"Look & Feel" <br> Die visuelle Gestaltung & Atomic Design</h3>
+        <hr>
+        <p>Die visuelle Wirkung hat im Design-Prozess des UI oberste Priorität.
+          Dazu gehören die Farben, Formen, Schriftarten, Icons oder auch die Gestaltung interaktiver Bestandteile, wie Buttons, Eingabefelder, Schieberegler, Slider und mehr.
+            Nach der Zielgruppenanalyse war für mich wichtig, dass das Design ruhig, modern und aufgeräumt wirken soll, um einerseits eine gute Nutzerführung zu gewährleisten und andererseits in dem Nutzendem ruhige und ausgeglichene Emotionen hervorzurufen. Im Folgenden stelle ich Ausschnitte der visuellen Gestaltung vor. Ich habe hierfür das Atomic Design genutzt, um eine Konsistenz in meinem Projekt zu erschaffen. </p>
+      </div>
+    </section>
+
+    <section class="assets">
+      <div>
+        <div class="assets-headline">
+
+          <h3>Color</h3>
+          <img src="bilder/atom-01.png" alt="Einzelnes Atom">
+        </div>
+
+        <hr>
+      </div>
+      <div class="assets-color">
+        <div class="appdesign-colors-text-container">
+          <p>Farben sind nicht nur Zahlen im RGB - Farbraum, sondern lassen uns auch Emotionen spüren, oder lösen diese in uns aus. So kann ein Grün Ruhe, Gelassenheit und ein Gefühl von Sicherheit versprühen, wobei ein Rot für Gefahr steht und somit die Aufmerksamkeit erhöht.</p>
+          <p>Auf Grundlage der Farbpsychologie habe ich mich daher für blau-grüne Töne entschieden, um beim Nutzendem Vertrauen, Ruhe, Gelassenheit, Harmonie und ein entspannendes Gefühl auszulösen, sobald er die App öffnet.</p>
+          <p>Zudem habe ich eine Signalfarbe in Rot gewählt, welches die Komplementärfarbe zu den gewählten blau-grün Tönen darstellt. Diese ist sparsam eingesetzt und nur für Fehlermeldungen, oder wichtige Hinweise zu nutzen.</p>
+        </div>
+        <div class="appdesign-colors-grid-container">
+         <div class="grid-item color1">#404040</div>
+         <div class="grid-item color2">#9AC4CA</div>
+         <div class="grid-item color3">#263D45</div>
+         <div class="grid-item color4">#D9D9D9</div>
+         <div class="grid-item color5">#5DA2AD</div>
+         <div class="grid-item color6">#843636</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="assets">
+      <div>
+        <div class="assets-headline">
+        <h3>Typografie</h3>
+        <img src="bilder/atom-01.png" alt="Einzelnes Atom">
+        </div>
+      <hr>
+      </div>
+      
+      <div class="appdesign-typofield">
+        <div class="appdesign-textfield">
+          <p style="font-size: 2rem;">Segoe UI</p>
+         <p>Schriftarten unterliegen, wie Farben, einer bestimmten Charakterisierung. Daher habe ich mich hier bewusst in dem Projekt für eine serifenlose Schrift entschieden, der moderne, klare und auch freundliche Aspekte zugeschrieben werden. <br>
+          Zudem ist eine gute Lesbarkeit auf jedem Device gegeben. <br>
+          Auch zahlreiche Schriftschnitte, und somit eine große Freiheit Bereiche anders zu gestalten, ohne dabei auf eine andere Schriftart zurückgreifen zu müssen, ist ein wichtiger Punkt in der Auswahl der gegeigneten Schriftart. Da dies eine einheitliche Darstellung im Design unterstützt und somit ein rundes Erscheinungsbild abbildet.
+         </p>
+        </div>
+        <div class="appdesing-fontstyles">
+          <img src="bilder/typo.jpg" alt="Übersicht der Typhography von H1 Segoe UI Bold bis zum Fließtext p Seogoe UI Regular und die Schriftschnitte" onclick="openLightbox('bilder/typo.jpg')">
+      </div>
+    </section>
+    <section class="assets">
+      <div>
+        <div class="assets-headline">
+          <h3>Interactions</h3>
+          <img src="bilder/molekül-01.png" alt="Einzelnes Atom">
+
+        </div>
+          <hr>
+      </div>
+      <div class="assets-interaction">
+        <div class="assets-interaction-textfield">
+          <p>Interaktionen sind der Verbund aus einzelnen Atomen (Molekül) und ermöglichen eine Wiederverwertbarkeit von Eingabefeldern, oder anderen Interaktionen wie Buttons.</p>
+          <p>Für eine bessere Darstellung, habe ich ein paar ausgewählte Interaktionen als Video eingebunden.</p>
+        </div>
+
+        <video width="auto" height="528px" controls>
+          <source src="video/app-interaction-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <video width="auto" height="528px" controls>
+          <source src="video/app-interaction-video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <video width="auto" height="528px" controls>
+          <source src="video/app-interaction-video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+
+   </section>
+
+   <section class="assets">
+    <h3>Prototyp</h3>
+    <hr>
+
+    <div class="assets-interaction">
+      <div><img src="bilder/AppDesign1.png" alt="#" width="260px" height="auto"></div>
+      <div><img src="bilder/AppDesign2.png" alt="#" width="260px" height="auto"></div>
+      <div><img src="bilder/AppDesign3.png" alt="#"width="260px" height="auto"></div>
+      <div class="assets-interaction-figma-presentation">
+        <p>Du bist neugierig geworden und möchtest dir einen eigenen Eindruck von meinem Prototypen machen? <br> <br>
+        Dann sende mir eine E-Mail mit einer kurzen Nachricht. <br>Nach meiner Freischaltung kannst du über den Button unterhalb zu meinem Projekt gelangen.</p>
+        <button><a href="https://www.figma.com/proto/kvcCFtU7xMqExpHbsnsAzE/App-Mindful-path?page-id=0%3A1&node-id=511-7255&viewport=941%2C459%2C0.06&t=3TUadbO52CctBhaC-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=511%3A7255&show-proto-sidebar=1" target="_blank">Open in Figma</a></button>
+      </div>
+    </div>
+
+
+   </section>
+
+   <!---SLIDER--->
+   <!--<section>
+ 
+    <div class="slide-container-appdesign">
+     <div class="slides-appdesign">
+       <div class="numbertext">1 / 6</div>
+       <img src="https://placehold.co/1300x484" alt="#">
+     </div>
+ 
+     <div class="slides-appdesign">
+       <div class="numbertext">2 / 6</div>
+       <img src="https://placehold.co/1300x484" alt="#">
+     </div>
+ 
+     <div class="slides-appdesign">
+       <div class="numbertext">3 / 6</div>
+       <img src="https://placehold.co/1300x484" alt="#">
+     </div>
+ 
+     <div class="slides-appdesign">
+       <div class="numbertext">4 / 6</div>
+       <img src="https://placehold.co/1300x484" alt="#">
+     </div>
+ 
+     <div class="slides-appdesign">
+       <div class="numbertext">5 / 6</div>
+       <img src="https://placehold.co/1300x484" alt="#">
+     </div>
+ 
+     <div class="slides-appdesign">
+       <div class="numbertext">6 / 6</div>
+       <img src="https://placehold.co/1300x484" alt="#">
+     </div>
+ 
+     <a class="prev-slide-appdesign" onclick="plusSlides(-1)">❮</a>
+     <a class="next-slide-appdesign" onclick="plusSlides(1)">❯</a>
+ 
+     <div class="caption-container-slides-appdesign">
+       <p id="caption-appdesign"></p>
+     </div>
+ 
+     <div class="row-slide-appdesign">
+       <div class="column-slide-appdesign">
+         <img class="demo cursor" src="/bilder/abstract-6047465.jpg" onclick="currentSlide(1)" alt="The Woods">
+       </div>
+       <div class="column-slide-appdesign">
+         <img class="demo cursor" src="/bilder/Autumn_Illu_500x700.png" onclick="currentSlide(2)" alt="Cinque Terre">
+       </div>
+       <div class="column-slide-appdesign">
+         <img class="demo cursor" src="/bilder/BMI Rechner.png" onclick="currentSlide(3)" alt="Mountains and fjords">
+       </div>
+       <div class="column-slide-appdesign">
+         <img class="demo cursor" src="/bilder/bmi-st-1326844049.png" onclick="currentSlide(4)" alt="Northern Lights">
+       </div>
+       <div class="column-slide-appdesign">
+         <img class="demo cursor" src="/bilder/do-create-text-portrait-effects-in-photoshop.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+       </div>
+       <div class="column-slide-appdesign">
+         <img class="demo cursor" src="/bilder/Flyer_Projekt.png" onclick="currentSlide(6)" alt="Snowy Mountains">
+       </div>
+     </div>
+   </div>
+  </section>
+-->
+
+</main>
+  
+  <!--------FOOTER-------------------------->
+  
+  <footer id="side-footer">
+    <nav class="footer-nav">
+     <ul>
+      <li><a href="impressum.html">Imprint</a></li>
+      <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     </ul>
+    </nav>
+    <div class="top"><a href="#top">&#8657;</a></div>
+  </footer>
+  
+
+  <script>
+    function openLightbox(imageSrc) {
+      let lightbox = document.getElementById("lightbox");
+      let lightboxImg = document.getElementById("lightbox-image");
+      lightbox.style.display = "block";
+      
+      // Setzt die Quelle des Lightbox-Bildes auf das angeklickte Bild
+      lightboxImg.src = imageSrc;
+    }
+    
+    function closeLightbox() {
+      let lightbox = document.getElementById("lightbox");
+      lightbox.style.display = "none";
+    }
+    </script>
+    
+       
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Webdesign</title>
+ <meta name="description" content="Anne Dalchow - Portfolio Graphic Design">
+ <link href="css/style.css" rel="stylesheet" media="all">
+ <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
+</head>
+<body>
+ <!--------HEADER-------------------------->
+ <header> 
+  <nav>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <input type="checkbox" id="toggle_button">
+   <label for="toggle_button" class="toggle_button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </label>
+
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About&nbsp;me</a></li>
+    <li class="expandable_li">
+      <input type="checkbox" id="work_checkbox">
+      <label for="work_checkbox">&#9776; Portfolio</label>
+         <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+</header> 
+
+ <!-------------------MAIN----------------------->
+
+ <main class="background-dark" id="page-background">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li>Graphic Design</li>
+  </ul>
+  <section id="site-hero-dark">
+    <div class="inside">
+      <h1>Graphic Design</h1>
+      <hr>
+      <div class="dropdown-projectsites">
+        <button class="dropbtn">Overview </button>
+          <div class="dropdown-content">
+            <a href="portfolio.html">All</a>
+            <a href="project-webdesign.html">Webdesign</a>
+            <a href="project-prints.html" >Prints</a>
+            <a href="#" class="current">Graphics</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="wrapper-project-work">
+    <section class="project-work-first-section">
+      <div class="project-work-img">
+        <img src="/bilder/graphics-first_Zeichenfläche 1.png" alt="Mockup Webdesign auf unterschiedlichen Geräten" width="auto" height="auto">
+      </div>
+      <div class="project-text-container-prints">
+              <div class="text-container-prints-first-section">
+                <h2>Graphic Design</h2>
+                <br>
+                <p>Möchtest du lieber eine Illustration, eine Zeichnung oder die Bearbeitung eines Fotos? Hier findest du eine Auswahl meiner aktuellen Projekte in diesen Bereichen. <br>
+                  Besondere Vorlieben habe ich hierbei für Schraffurtechniken, naturnahen Themen, organischen Strukturen und einem gewissem Minimalismus (Flat Design).</p> 
+                <hr> <br>
+                <p>Umgesetzung: Adobe Illustrator, Adobe Photoshop</p>
+              </div>
+      </div>
+    </section>
+
+    <div class="row-illustration"> 
+      <div class="column-illustration">
+        <img src="/bilder/Galerie/Illu_Sonne.png">
+       <img src="/bilder/Galerie/Autumn_Illu_500x700.png">
+       <img src="/bilder/Galerie/Hike_Box_Zeichenfläche 1.png">
+       <img src="/bilder/Galerie/nerd_ypsilon_vs3.png" >
+       <img src="/bilder/Galerie/Poster.png">
+       <img src="/bilder/Galerie/Frau_Illustration_Zeichenfläche 1.png">
+
+
+      </div>
+      <div class="column-illustration">
+       <img src="/bilder/Galerie/Illu_Welt.png">
+       <img src="/bilder/Galerie/Mensch Farbe.png">
+
+       <img src="/bilder/Galerie/obst_zeichnungen-01.png">
+       <img src="/bilder/Galerie/FB_IMG_1555167081715.jpg">
+       <img src="/bilder/Galerie/zeichnung1.png">
+
+
+
+      </div>  
+      <div class="column-illustration">
+        <img src="/bilder/Galerie/neon_light_effect.png" >
+        <img src="/bilder/Galerie/schwebendeInseln.png" >
+        <img src="/bilder/Galerie/Glühmond.png">
+        <img src="/bilder/Galerie/Tag und Nacht_abgeschlossen.png" >
+        <img src="/bilder/Galerie/Vektorstyle.png" >
+
+        <img src="/bilder/Galerie/Blume_Zeichenfläche 1.png">
+        <img src="/bilder/Galerie/Motte.png">
+      </div>
+    </div>     
+   
+    
+  <div class="pre-back-buttons">
+    <button><a href="project-prints.html">&#129092; Prints</a></button>
+    <button><a href="portfolio.html">Overview &#129094;</a></button>
+  </div>
+</main>
+  
+<!--------FOOTER-------------------------->
+
+<footer id="side-footer">
+  <nav class="footer-nav">
+   <ul>
+    <li><a href="impressum.html">Imprint</a></li>
+    <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+  <div class="top"><a href="#top">&#8657;</a></div>
+</footer>
+
+</body>
+</html>

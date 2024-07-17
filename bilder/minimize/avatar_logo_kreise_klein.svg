@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 150">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 3.64px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5, .cls-6, .cls-8, .cls-9, .cls-10, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19 {
+        stroke: #1d1d1b;
+      }
+
+      .cls-2 {
+        stroke-width: 2.93px;
+      }
+
+      .cls-3 {
+        stroke-width: .25px;
+      }
+
+      .cls-3, .cls-11 {
+        stroke: #1c1c1c;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-20 {
+        fill: url(#Wellenförmige_grobe_Linien-3);
+      }
+
+      .cls-20, .cls-21, .cls-7, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        stroke-width: 2.5px;
+      }
+
+      .cls-5 {
+        stroke-width: 2px;
+      }
+
+      .cls-21 {
+        fill: url(#Wellenförmige_grobe_Linien-4);
+      }
+
+      .cls-6 {
+        stroke-width: 2.21px;
+      }
+
+      .cls-9 {
+        stroke-width: 4px;
+      }
+
+      .cls-10 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-11, .cls-16 {
+        stroke-width: .5px;
+      }
+
+      .cls-12 {
+        stroke-width: 3.29px;
+      }
+
+      .cls-22 {
+        fill: url(#Wellenförmige_feine_Linien-3);
+      }
+
+      .cls-13 {
+        stroke-width: .75px;
+      }
+
+      .cls-23 {
+        fill: #fff;
+      }
+
+      .cls-14 {
+        stroke-width: 2.57px;
+      }
+
+      .cls-15 {
+        stroke-width: 1.86px;
+      }
+
+      .cls-24 {
+        fill: url(#Wellenförmige_feine_Linien-2);
+      }
+
+      .cls-25 {
+        fill: url(#Wellenförmige_feine_Linien);
+      }
+
+      .cls-26 {
+        fill: url(#Wellenförmige_grobe_Linien-2);
+      }
+
+      .cls-27 {
+        fill: url(#Wellenförmige_grobe_Linien);
+      }
+
+      .cls-28 {
+        fill: #1c1c1c;
+      }
+
+      .cls-17 {
+        stroke-width: 2.25px;
+      }
+
+      .cls-18 {
+        stroke-width: 1.75px;
+      }
+
+      .cls-19 {
+        stroke-width: 1.25px;
+      }
+    </style>
+    <pattern id="Wellenförmige_feine_Linien" data-name="Wellenförmige feine Linien" x="0" y="0" width="60.75" height="72" patternTransform="translate(-16279 -16274.5) rotate(-90) scale(1 -1)" patternUnits="userSpaceOnUse" viewBox="0 0 60.75 72">
+      <g>
+        <rect class="cls-7" width="60.75" height="72"/>
+        <line class="cls-4" x1="60.75" x2="60.75" y2="72"/>
+        <g>
+          <line class="cls-16" x1="30.38" x2="30.38" y2="72"/>
+          <line class="cls-13" x1="26.58" x2="26.58" y2="72"/>
+          <line class="cls-8" x1="22.78" x2="22.78" y2="72"/>
+          <line class="cls-19" x1="18.98" x2="18.98" y2="72"/>
+          <line class="cls-10" x1="15.19" x2="15.19" y2="72"/>
+          <line class="cls-18" x1="11.39" x2="11.39" y2="72"/>
+          <line class="cls-5" x1="7.59" x2="7.59" y2="72"/>
+          <line class="cls-17" x1="3.8" x2="3.8" y2="72"/>
+          <line class="cls-4" y2="72"/>
+          <line class="cls-13" x1="34.17" x2="34.17" y2="72"/>
+          <line class="cls-8" x1="37.97" x2="37.97" y2="72"/>
+          <line class="cls-19" x1="41.76" x2="41.76" y2="72"/>
+          <line class="cls-10" x1="45.56" x2="45.56" y2="72"/>
+          <line class="cls-18" x1="49.36" x2="49.36" y2="72"/>
+          <line class="cls-5" x1="53.16" x2="53.16" y2="72"/>
+          <line class="cls-17" x1="56.95" x2="56.95" y2="72"/>
+          <line class="cls-4" x1="60.75" x2="60.75" y2="72"/>
+        </g>
+        <line class="cls-4" y2="72"/>
+      </g>
+    </pattern>
+    <pattern id="Wellenförmige_feine_Linien-2" data-name="Wellenförmige feine Linien" patternTransform="translate(454 -16273.5) rotate(-90)" xlink:href="#Wellenförmige_feine_Linien"/>
+    <pattern id="Wellenförmige_feine_Linien-3" data-name="Wellenförmige feine Linien" patternTransform="translate(547 -16266) rotate(-90)" xlink:href="#Wellenförmige_feine_Linien"/>
+    <pattern id="Wellenförmige_grobe_Linien" data-name="Wellenförmige grobe Linien" x="0" y="0" width="60.75" height="72" patternTransform="translate(488 -16245.5) rotate(-90)" patternUnits="userSpaceOnUse" viewBox="0 0 60.75 72">
+      <g>
+        <rect class="cls-7" width="60.75" height="72"/>
+        <line class="cls-9" x1="60.75" x2="60.75" y2="72"/>
+        <g>
+          <line class="cls-9" y2="72"/>
+          <line class="cls-1" x1="4.34" x2="4.34" y2="72"/>
+          <line class="cls-12" x1="8.68" x2="8.68" y2="72"/>
+          <line class="cls-2" x1="13.02" x2="13.02" y2="72"/>
+          <line class="cls-14" x1="17.36" x2="17.36" y2="72"/>
+          <line class="cls-6" x1="21.69" x2="21.69" y2="72"/>
+          <line class="cls-15" x1="26.03" x2="26.03" y2="72"/>
+          <line class="cls-9" x1="60.75" x2="60.75" y2="72"/>
+          <line class="cls-1" x1="56.41" x2="56.41" y2="72"/>
+          <line class="cls-12" x1="52.07" x2="52.07" y2="72"/>
+          <line class="cls-2" x1="47.73" x2="47.73" y2="72"/>
+          <line class="cls-14" x1="43.39" x2="43.39" y2="72"/>
+          <line class="cls-6" x1="39.05" x2="39.05" y2="72"/>
+          <line class="cls-15" x1="34.71" x2="34.71" y2="72"/>
+          <line class="cls-10" x1="30.38" x2="30.38" y2="72"/>
+        </g>
+        <line class="cls-9" y2="72"/>
+      </g>
+    </pattern>
+    <pattern id="Wellenförmige_grobe_Linien-2" data-name="Wellenförmige grobe Linien" patternTransform="translate(-16313 -16243.5) rotate(-90) scale(1 -1)" xlink:href="#Wellenförmige_grobe_Linien"/>
+    <pattern id="Wellenförmige_grobe_Linien-3" data-name="Wellenförmige grobe Linien" patternTransform="translate(-4769.5 -11147.76) rotate(-90) scale(.38)" xlink:href="#Wellenförmige_grobe_Linien"/>
+    <pattern id="Wellenförmige_grobe_Linien-4" data-name="Wellenförmige grobe Linien" patternTransform="translate(-4540.37 -11081.22) rotate(-90) scale(.38)" xlink:href="#Wellenförmige_grobe_Linien"/>
+  </defs>
+  <path class="cls-28" d="m100.5,55.5c-7.35,0-13.7,4.29-16.69,10.5h33.38c-2.99-6.21-9.34-10.5-16.69-10.5Z"/>
+  <path class="cls-25" d="m117.19,66h-33.38c-1.16,2.42-1.81,5.13-1.81,8,0,10.22,8.28,18.5,18.5,18.5s18.5-8.28,18.5-18.5c0-2.87-.65-5.58-1.81-8Z"/>
+  <line class="cls-11" x1="272" y1="60.5" x2="67" y2="60.5"/>
+  <line class="cls-11" x1="201" y1="101.5" x2="186" y2="101.5"/>
+  <line class="cls-3" x1="226" y1="42" x2="82" y2="42"/>
+  <line class="cls-11" x1="136" y1="101.5" x2="66" y2="101.5"/>
+  <path class="cls-28" d="m202.5,56.5c7.35,0,13.7,4.29,16.69,10.5h-33.38c2.99-6.21,9.34-10.5,16.69-10.5Z"/>
+  <path class="cls-24" d="m185.81,67h33.38c1.16,2.42,1.81,5.13,1.81,8,0,10.22-8.28,18.5-18.5,18.5s-18.5-8.28-18.5-18.5c0-2.87.65-5.58,1.81-8Z"/>
+  <path class="cls-28" d="m110,74.5h88v.5c0,24.3-19.7,44-44,44-24.3,0-44-19.7-44-44v-.5Z"/>
+  <path class="cls-23" d="m154,31c24.13,0,43.73,19.43,44,43.5h-88c.27-24.07,19.87-43.5,44-43.5Z"/>
+  <path class="cls-22" d="m154,31c24.13,0,43.73,19.43,44,43.5h-88c.27-24.07,19.87-43.5,44-43.5Z"/>
+  <path class="cls-28" d="m228.81,76h14.38c-1.29,2.66-4.03,4.5-7.19,4.5s-5.9-1.84-7.19-4.5Z"/>
+  <path class="cls-27" d="m236,64.5c4.42,0,8,3.58,8,8,0,1.26-.29,2.44-.81,3.5h-14.38c-.52-1.06-.81-2.24-.81-3.5,0-4.42,3.58-8,8-8Z"/>
+  <path class="cls-28" d="m74.19,78h-14.38c1.29,2.66,4.03,4.5,7.19,4.5s5.9-1.84,7.19-4.5Z"/>
+  <path class="cls-26" d="m67,66.5c-4.42,0-8,3.58-8,8,0,1.26.29,2.44.81,3.5h14.38c.52-1.06.81-2.24.81-3.5,0-4.42-3.58-8-8-8Z"/>
+  <path class="cls-28" d="m47.3,75.81h5.39c-.48,1-1.51,1.69-2.7,1.69s-2.21-.69-2.7-1.69Z"/>
+  <path class="cls-20" d="m50,71.5c1.66,0,3,1.34,3,3,0,.47-.11.92-.3,1.31h-5.39c-.2-.4-.3-.84-.3-1.31,0-1.66,1.34-3,3-3Z"/>
+  <path class="cls-28" d="m249.43,74h5.39c-.48,1-1.51,1.69-2.7,1.69s-2.21-.69-2.7-1.69Z"/>
+  <path class="cls-21" d="m252.13,69.69c1.66,0,3,1.34,3,3,0,.47-.11.92-.3,1.31h-5.39c-.2-.4-.3-.84-.3-1.31,0-1.66,1.34-3,3-3Z"/>
+</svg>

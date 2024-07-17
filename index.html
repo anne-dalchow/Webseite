@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Portfolio</title>
+ <meta name="description" content="Willkommen auf meinem Portfolio. Hier findest du eine Übersicht meiner kreativen Arbeiten aus den Bereichen Grafik- und Webdesign.">
+ <link rel="shortcut icon" href="bilder/Logo_Anne-01.png" type="image/x-icon">
+<link rel="icon" href="bilder/Logo_Anne-01.png" type="image/x-icon">
+<link href="css/style.css" rel="stylesheet" media="all">
+<link rel="preload" fetchpriority="high" as="image" href="bilder/Vorschau/UX Design-01.png" type="image/webp">
+
+</head>
+
+<body>
+ 
+ <!--------HEADER-------------------------->
+ <header> 
+  <nav>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <input type="checkbox" id="toggle_button">
+   <label for="toggle_button" class="toggle_button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </label>
+
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About&nbsp;me</a></li>
+    <li class="expandable_li">
+      <input type="checkbox" id="work_checkbox">
+      <label for="work_checkbox">&#9776; Portfolio</label>
+         <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+</header> 
+
+<!--------MAIN-------------------------->
+
+<main>
+
+<!--------HOME-------------------------->
+
+ <section id="home">
+   <hr>
+    <div class="hero-background">
+      <div class="inside">
+
+       <div class="textfield-home">
+         <h1>
+          Hallo, ich bin <span class="name">Anne</span> <br>
+        </h1>
+         <h2>Frontend Developerin & Printdesignerin</h2>
+         <hr class="hero-hr">
+         <p class="textbox">
+          Ich heiße dich herzlich willkommen in meinem kleinen Atelier für künstlerisches Design! <br>
+          Ich wünsche dir viel Spaß beim Erkunden meines Portfolios. Lass dich von meinen Projekten inspirieren und uns gemeinsam eine kreative Reise beginnen!
+         </p>
+          <div class="home-button-container">
+            <button><a href="portfolio.html">Portfolio</a></button>
+            <button><a href="contact.html">Contact</a></button>
+          </div>
+       </div>
+       <div class="imgcontainer-home">
+        <img src="bilder/Logo.png" alt="" width="500px">
+       </div>
+      </div>
+      <div class="icon-container">
+        <a href="#about" class="icon-link"> &#9098;
+        </a>
+      </div>
+    </div>
+ </section>
+
+<!--------ABOUT-------------------------->
+
+ <section id="about">
+  <h3>About</h3>
+  <hr>
+
+  <div class="about-container">
+   <div class="img-container">
+    <figure class="about-short-img">
+      <picture>
+          <source media="(max-width:650px)" srcset="bilder/minimize/avatar_logo_kreise_klein.svg">
+          <source media="(min-width:801px)" srcset="bilder/minimize/avatar_logo_kreise.svg">
+          <img src="bilder/minimize/avatar_logo_kreise.svg" alt="Avatar Logo">
+      </picture>
+    </figure>
+   </div>
+
+   <div class="text-container">
+    <div class="text-header">
+      <p>Web- & Printdesign</p>
+      <h4>Anne Dalchow</h4>
+      <hr>
+    </div>
+    <p>
+      Willkommen auf meiner Seite!
+    </p>
+    <p>
+      Als gelernte Medientechnologin Druck und angehende Grafik- und Webdesignerin vereine ich handwerkliches Können mit kreativem Design.
+    </p>
+    <p>
+      In meinem <a href="portfolio.html">Portfolio</a> findest du spannende kunstvolle Illustrationen und drucktechnischen Umsetzungen.
+      Werfe gerne einen Blick hinein!
+    </p>
+
+    <div class="link-about">
+      <a href="about.html">Mehr über mich</a>
+    </div>
+   </div>
+  </div>
+ </section>
+
+<!--------Work SHORT-------------------------->
+
+ <section id="work-short">
+  <h3>Work</h3>
+  <hr>
+    <div class="wrapper">
+      <div id="work-img">
+        <div class="work-textfield">
+          <p>Hier findest du eine kleine Auswahl <br>meiner aktuellen Projekte <br> in den Bereichen <br> Print-, Grafik- und Webdesign.</p><br><br>
+          <button><a href="portfolio.html">Zum Portfolio </a></button>
+        </div>
+
+        <div>
+          <a href="project-webdesign.html">
+            <figure class="work-short-img">
+              <picture>
+                  <source media="(max-width:500px)" srcset="bilder/Vorschau/web_Vorschau.png">
+                  <source media="(max-width:768px)" srcset="bilder/Vorschau/web_Vorschau_2span.png">
+                  <img src="bilder/Vorschau/web_Vorschau_2span.png" alt="Mockup Webseiten Design" class="work-short-img">
+              </picture>
+            </figure>
+          </a>
+        </div>
+
+        <div>
+          <a href="project-prints.html">
+            <figure class="work-short-img">
+              <picture>
+                  <source media="(max-width:500px)" srcset="bilder/Vorschau/print_design_Vorschau_span1.png">
+                  <img src="bilder/Vorschau/print_design_Vorschau.png" alt="Mockup Print Technology" class="work-short-img">
+              </picture>
+            </figure>
+          </a>
+        </div>
+
+        <div>
+          <a href="project-illustration.html">
+            <figure class="work-short-img">
+              <picture>
+                  <source media="(max-width:500px)" srcset="bilder/Vorschau/print_Vorschau.png">
+                  <source media="(max-width:768px)" srcset="bilder/Vorschau/print_Vorschau_2span.png">
+                  <img src="bilder/Vorschau/print_Vorschau.png" alt="Mockup Flyer Design" class="work-short-img">
+              </picture>
+            </figure>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+ </section>
+
+<!--------CONTACT SHORT-------------------------->
+
+<div class="short-contact">
+  <h3>Lets work together</h3>
+  <p>Telefon: +49 177 344 79 73 <br>
+    E-Mail: anne.dalchow@web.de <br></p>
+  <hr>
+  <div class="icon-short-contact">
+    <a href="https://github.com/anne-dalchow"><img src="bilder/minimize/github-01.svg" alt="Github Icon"></a>
+    <a href="https://www.linkedin.com/in/anne-dalchow/"><img src="bilder/minimize/linkedIn-01.svg" alt="LinkedIn Icon"></a>
+  </div>
+
+</div>
+
+</main>
+
+<!--------FOOTER-------------------------->
+
+<footer id="side-footer">
+  <nav class="footer-nav">
+   <ul>
+    <li><a href="impressum.html">Imprint</a></li>
+    <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+  <div class="top"><a href="#top">&#8657;</a></div>
+</footer>
+</body>
+</html>

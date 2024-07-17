@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Todo App</title>
+ <meta name="description" content="Anne Dalchow - Portfolio - Todo App">
+ <link href="css/style.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/todo-list.css">
+
+
+</head>
+
+<body>
+  <!--------HEADER-------------------------->
+  <header> 
+   <nav>
+    <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+    <input type="checkbox" id="toggle_button">
+    <label for="toggle_button" class="toggle_button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+ 
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About&nbsp;me</a></li>
+        <li class="expandable_li">
+          <input type="checkbox" id="work_checkbox">
+          <label for="work_checkbox">&#9776; Portfolio</label>
+          <ul class="dropdown">
+           <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+           <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+           <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+           <li><a href="project-illustration.html">Graphics</a></li>
+         </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav>
+ </header> 
+
+ <main class="todo-list-site">
+  <ul class="breadcrumb">
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="project-webdesign.html">Web Design</a></li>
+    <li>ToDo App</li>
+  </ul>
+
+
+
+
+ <div class="todolist-wrapper">
+  <div class="todolist-textfield">
+   <h1>TO DO APP</h1>
+   <p>Trage hier eine Aufgabe ein und füge sie mit "Add" der Liste hinzu</p>
+  </div>
+
+  <form>
+   <input id="todo-input" type="text" placeholder="Hier einfügen..." autocomplete="off">
+   <button id="add-button">Add</button>
+  </form>
+
+  <ul id="todo-list">
+   <!-- Für Ansicht, wie Todo Liste später aussehen soll:
+    
+    <li class="todo">
+
+    <input type="checkbox" id="todo-1">
+    <label class="custom-checkbox" for="todo-1">
+     <svg fill="transparent" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+    </label>
+
+    <label for="todo-1" class="todo-text">
+     webdev project with html, css and js
+    </label>
+
+    <button class="delete-button">
+     <svg fill="var(--secondcolor)" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+    </button>
+
+   </li>
+
+   <li class="todo">
+
+    <input type="checkbox" id="todo-2">
+    <label class="custom-checkbox" for="todo-2">
+     <svg fill="transparent" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+    </label>
+
+    <label for="todo-2" class="todo-text">
+     webdev project with html, css and js
+    </label>
+
+    <button class="delete-button">
+     <svg fill="var(--secondcolor)" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+    </button>
+
+   </li>
+  -->
+  </ul>
+
+ </div>
+ 
+
+</main>
+  
+<!--------FOOTER-------------------------->
+
+<footer id="side-footer">
+  <nav class="footer-nav">
+   <ul>
+    <li><a href="impressum.html">Imprint</a></li>
+    <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+  <div class="top"><a href="#top">&#8657;</a></div>
+</footer>
+<script src="js/todo.js"></script>     
+</body>
+</html>

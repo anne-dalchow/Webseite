@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Webdesign</title>
+ <meta name="description" content="Anne Dalchow - Portfolio Webdesign">
+ <link href="css/style.css" rel="stylesheet" media="all">
+ <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
+</head>
+<body>
+ <!--------HEADER-------------------------->
+ <header> 
+  <nav>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <input type="checkbox" id="toggle_button">
+   <label for="toggle_button" class="toggle_button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </label>
+
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About&nbsp;me</a></li>
+    <li class="expandable_li">
+      <input type="checkbox" id="work_checkbox">
+      <label for="work_checkbox">&#9776; Portfolio</label>
+         <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+</header> 
+
+ <!-------------------MAIN----------------------->
+
+ <main class="background-dark" id="page-background">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li>Prints</li>
+  </ul>
+  <section id="site-hero-dark">
+    <div class="inside">
+      <h1>Prints</h1>
+      <hr>
+      <div class="dropdown-projectsites">
+        <button class="dropbtn">Overview </button>
+          <div class="dropdown-content">
+            <a href="portfolio.html">All</a>
+            <a href="project-webdesign.html">Webdesign</a>
+            <a href="#" class="current">Prints</a>
+            <a href="project-illustration.html">Graphics</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="wrapper-project-work">
+    <section class="project-work-first-section">
+      <div class="project-work-img">
+        <img src="/bilder/Drucktechnik_Zeichenfläche 1_Zeichenfläche 1.png" alt="Mockup Webdesign auf unterschiedlichen Geräten" width="auto" height="auto">
+      </div>
+      <div class="project-text-container-prints">
+              <div class="text-container-prints-first-section">
+                <h2>Drucktechnik</h2>
+                <br>
+                <p>Welche Drucktechniken gibt es, und welche ist für mein Produkt am besten geeignet? <br>Worauf sollte ich bei der Erstellung meiner Designs für den Druck achten? Und was bedeuten denn Begriffe wie Farbprofil und Trapping?</p>
+                <hr>
+              </div>
+              <div>
+                <p>Diese Fragen tauchen häufig auf und lassen Kund*innen oft ratlos zurück. In den letzten Jahren habe ich umfassende Erfahrungen mit UV-Druck, Digitaldruck, Siebdruck und Offsetdruck gesammelt – von der Druckvorstufe über den eigentlichen Druckprozess bis hin zur Weiterverarbeitung.
+                Dank dieses umfassenden Wissens über die verschiedenen Druckbereiche kann ich beratend zur Seite stehen, Kund*innen den gesamten Prozess erläutern und sie über mögliche Herausforderungen aufklären. So entsteht am Ende ein Produkt, das genau den Vorstellungen entspricht.</p>
+              </div>
+      </div>
+    </section>
+
+    <section class="prints" id="uvprint">
+      <div>
+        <h3>UV Druck</h3>
+        <hr>
+      </div>
+      
+      <div class="prints-img-container">
+  
+        <div class="prints-first-img">
+            <img class="fade-in-prints" src="bilder/Kassette_hochkant.png" alt="Farbiger UV Druck auf Kassettenhülle" width="auto" height="auto">
+            <span class="prints-img-1024px"><img class="fade-in-prints" src="/bilder/Kassette_quer.png" alt="" width="auto" height="auto"></span>
+        </div>
+
+        <div class="prints-img">
+
+            <img class="fade-in-prints" src="/bilder/Kassette_var2.png" alt="" width="auto" height="auto">
+            <img class="fade-in-prints" src="/bilder/Webseite Kassette.png" alt="" width="auto" height="auto">
+          <img class="fade-in-prints" src="/bilder/Kassette_var3.png" alt="" width="auto" height="auto">
+          <img class="fade-in-prints" src="/bilder/Kassette_var5.png" alt="" width="auto" height="auto">
+          <img class="fade-in-prints" src="/bilder/UV Druck Kassette2.png" alt="" width="auto" height="auto">
+        </div>
+    </div>
+    <div class="print-work">
+      <h4>Aufgabenbereiche</h4>
+      <hr>
+      <div class="print-work-description">
+        <div>
+          <h4>Prepress</h4>
+          <hr>
+          <ul class="print-work-description-list">
+            <li>Kundenberatung</li>
+            <li>Druckdatenbearbeitung für:</li>
+              <ul>
+              <li>Papierprodukte</li>
+              <li>Kassetten Tampondruck</li>
+              <li>Kassetten UV Druck</li>
+              <li>Hüllen UV Druck</li>
+              <li>Sonderanfertigungen</li>
+              </ul>
+            <li>Preflightcheck</li>
+            <li>Softproof</li>
+            <li>Druckvorlagenerstellung</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Printing Technology</h4>
+          <hr>
+          <ul class="print-work-description-list">
+            <li>Hardproof</li>
+            <li>UV Druck auf:</li>
+              <ul>
+                 <li>Kassetten</li>
+                 <li>Schubern</li>
+                 <li>Kassettenhüllen</li>
+              </ul>
+            <li>Qualitätskontrolle</li>
+            <li>Wartungsarbeiten</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Postpress</h4>
+          <hr>
+          <ul class="print-work-description-list">
+            <li>Schneiden</li>
+            <li>Rillen</li>
+            <li>Qualitätskontrolle</li>
+            <li>Wartungsarbeiten</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="prints" id="shirtprint">
+      <div>
+        <h3>Textildruck</h3>
+        <hr>
+      </div>
+      
+      <div class="textil-prints-img-container">
+          <img class="fade-in-prints" src="bilder/shirts/Shirts_Var1.png" alt="" width="auto" height="auto">
+          <img class="fade-in-prints" src="bilder/shirts/Shirts_Var2.png" alt="" width="auto" height="auto">
+          <img class="fade-in-prints" src="bilder/shirts/Shirts_Var3.png" alt="" width="auto" height="auto">
+          <img class="fade-in-prints" src="bilder/shirts/Shirts_Var4.png" alt="" width="auto" height="auto">
+          <img class="fade-in-prints" src="bilder/shirts/Shirts_Var5.png" alt="" width="auto" height="auto">
+          <img class="fade-in-prints" src="bilder/shirts/Shirts_Var6.png" alt="" width="auto" height="auto">
+    </div>
+    <div class="print-work">
+      <h4>Aufgabenbereiche</h4>
+      <hr>
+      <div class="print-work-description">
+        <div>
+          <h4>Illustration</h4>
+          <hr>
+          <ul class="print-work-description-list">
+            <li>Skizzenerstellung</li>
+            <li>Illustration</li>
+            <li>Digitale Nachbearbeitung</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Druckvorstufe</h4>
+          <hr>
+          <ul class="print-work-description-list">
+            <li>Farbprofil</li>
+            <li>Druckdatenbearbeitung</li>
+            <li>Softproof</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+     
+   
+    
+  <div class="pre-back-buttons">
+    <button><a href="project-webdesign.html">&#129092; Web Design</a></button>
+    <button><a href="project-illustration.html">Graphics &#129094;</a></button>
+  </div>
+  </main>
+  
+  <!--------FOOTER-------------------------->
+  
+  <footer id="side-footer">
+    <nav class="footer-nav">
+     <ul>
+      <li><a href="impressum.html">Imprint</a></li>
+      <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     </ul>
+    </nav>
+    <div class="top"><a href="#top">&#8657;</a></div>
+  </footer>
+  
+  <script src="js/slowfadein.js"></script>
+</body>
+</html>
