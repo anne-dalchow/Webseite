@@ -40,7 +40,7 @@
 .project-text-container-appdesign {
   width: 45%;
   background-color: rgba(51, 51, 51, 0.95);
-  border-radius: 200px 15px;
+  border-radius: 100px 15px;
   padding: 40px 30px 60px 30px;
 }
 .project-text-container-appdesign h2 {
@@ -67,7 +67,7 @@
 
 .project-appdesign-description {
   background-color: rgba(51, 51, 51, 0.95);
-  border-radius: 50px;
+  border-radius: 25px;
   padding: 40px 30px 60px 30px;
   margin-bottom: 3%;
   width: 44%;
@@ -132,6 +132,11 @@
   margin: 10px auto 20px auto;
 }
 
+.p-color{
+  color: var(--secondcolor);
+  font-size: 1.1rem;
+}
+
 .assets-headline-last,
 .assets-headline {
   display: flex;
@@ -170,35 +175,37 @@
   justify-content: flex-start;
   font-size: 1rem;
   font-family: "Poppins";
-  color: white;
+  color: black;
   padding: 20px 40px;
   border-radius: 15px;
 }
 
-.color1 {
+.appdesign-colors-grid-container .color1 {
   background-color: #404040;
+  color: white;
 }
 
 .color2 {
   background-color: #9ac4ca;
-  color: black;
 }
 
-.color3 {
+
+.appdesign-colors-grid-container .color3 {
   background-color: #263d45;
+  color: white;
 }
 
 .color4 {
   background-color: #d9d9d9;
-  color: black;
 }
 
 .color5 {
   background-color: #5da2ad;
 }
 
-.color6 {
+.appdesign-colors-grid-container .color6 {
   background-color: #843636;
+  color: white;
 }
 
 /***************/
@@ -235,7 +242,7 @@
 }
 .assets-interaction .assets-interaction-textfield,
 .assets-interaction .assets-interaction-figma-presentation {
-  background-color: grey;
+  background-color: var(--maincolor);
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -260,6 +267,50 @@
 .assets-interaction .assets-interaction-textfield button a,
 .assets-interaction .assets-interaction-figma-presentation button a {
   color: var(--whitecolor);
+}
+
+.project-appdesign-description-list{
+  color: white;
+}
+.project-appdesign-description-list li{
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  list-style: circle;
+}
+
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.lightbox-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+.lightbox-img {
+  max-width: 90%; 
+  max-height: 90%; 
+  margin: auto; 
 }
 
 /* Responsive Design */
@@ -434,40 +485,3 @@
 .demo:hover {
   opacity: 1;
 }
-
-@media screen and (max-width: 1024px) {
-  .prints {
-    width: 80%;
-    padding-top: 0;
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-  .prints-img-container {
-    align-items: center;
-    width: 100%;
-  }
-  .prints-first-img img {
-    visibility: hidden;
-    height: 0;
-  }
-  .prints-first-img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .prints-img {
-    width: 100%;
-    justify-content: center;
-  }
-  .prints-img-1024px img {
-    visibility: visible;
-    height: auto;
-  }
-}
-@media screen and (max-width: 600px) {
-  .prints-img-1024px img {
-    width: 100%;
-  }
-  .prints-img img {
-    width: 100%;
-  }
-}/*# sourceMappingURL=appdesign.css.map */

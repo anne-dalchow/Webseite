@@ -2181,6 +2181,15 @@ font-size: 2rem;
 
   .skills .skill-img img {width: 50%;}
 
+  .row-gallery {
+    flex-direction: column;
+  }
+  .column img:first-child,
+  .column img {
+    width: 100%;
+    margin: 20px 0px;
+  }
+
   #project-presentation #presentation {
     gap: 5%;
   }
@@ -2357,12 +2366,6 @@ font-size: 2rem;
 
   .skill-container{
     width: 80%;
-  }
-  .row {
-    flex-direction: column;
-  }
-  .column img:first-child{
-    width: 250px;
   }
   .project-text-container-prints{
     padding: 20px 15px 40px 15px;

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - Webdesign</title>
+ <meta name="description" content="Anne Dalchow - Portfolio Webdesign und Animation ">
+ <link href="css/style.css" rel="stylesheet" media="all">
+ <link rel="stylesheet" href="css/wordpress.css" media="all">
+ <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
+</head>
+
+<body>
+ <!--------HEADER-------------------------->
+ <header> 
+  <nav>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <input type="checkbox" id="toggle_button">
+   <label for="toggle_button" class="toggle_button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </label>
+
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About&nbsp;me</a></li>
+    <li class="expandable_li">
+      <input type="checkbox" id="work_checkbox">
+      <label for="work_checkbox">&#9776; Portfolio</label>
+         <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+</header> 
+
+ <!-------------------MAIN----------------------->
+
+<main class="background-dark" id="page-background">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="project-webdesign.html">Web Design</a></li>
+    <li>Projekt 2</li>
+  </ul>
+  <section id="site-hero-dark">
+    <div class="inside">
+      <h1>Web Design & Animation</h1>
+      <hr>
+      <div class="dropdown-projectsites">
+        <button class="dropbtn">Overview <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="portfolio.html">All</a>
+            <a href="project-webdesign.html" >Webdesign</a>
+            <a href="project-prints.html">Prints</a>
+            <a href="project-illustration.html">Graphics</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="wrapper-project-appdesign">
+    <section class="project-appdesign-first-section">
+      <div class="project-appdesign-img">
+        <img src="/bilder/wordpress/Mockup_alle Geräte_oh.png" alt="Mockup WordPress Seite auf unterschiedlichen Geräten" width="100%" height="auto">
+      </div>
+      <div class="project-text-container-appdesign">
+        <h2>Web Design & Animation</h2>
+        <p><span class="smallCaps">Responsiv Design | Assesebillty | Seo | Animation</span></p>
+        <br> <br>
+
+        <p>Im Rahmen meiner Weiterbildung habe ich diese Portfolio Seite aufgebaut und möchte dir hier einige ausgewählte Funktionen genauer erklären.<br>
+         Insbesondere geht es hier um das responsiv Design, Barrierefreiheit, Seo und erstellte Animationen auf Basis von JavaScript & CSS und 3D Animationen mit Spline und SVGator.
+        </p>
+
+
+
+       <div class="assets-plugins">
+        <p>Genutzte Tools:</p>
+        <div>
+         <p>
+          Figma<br>
+          SVGator <br>
+          Spline
+        </p>
+        </div>
+        <div>
+         <p>
+          Browser Entwicklerkonsole (Chrome, Firefox) <br>
+          Lighthouse <br>
+          PageSpeed Insights<br>
+          Chrome Erweiterung: Responsiv Viewer <br>
+          WAVE
+         </p>
+        </div>
+
+       </div>
+
+     </div>
+    </section>
+
+
+    <section class="assets">
+     <h3>Responsiv Design</h3>
+     <hr>
+     <div class="assets-interaction-cart">
+      <div>
+       <h4>'Mobil-First'</h4>
+       <p>
+        Nahezu jede Person nutzt heutzutage ein Mobiltelefon, um damit Internetseiten aufzurufen. <br>
+        Dies erhöhte auch die Relevanz des responsiven Designs. <br>
+        Auch angesichts der vergangenen Ankündigung von Google, dass ab dem 5. Juli 2023 nur noch ein Mobile Googlebot zur Untersuchung von Websites verwendet werden soll, stellt die Mobile-First-Indexierung und responsive Darstellung in den Mittelpunkt. <br></p>
+
+        <p><span class="p-color">Doch was ist eigentlich responsiv Design ?</span><br>
+         Responsive Webdesign bezieht sich auf die Fähigkeit einer Website, sich nahtlos an verschiedene Bildschirmgrößen und Geräte anzupassen. Dies bedeutet, dass die Website nicht nur auf einem Desktop-Computer gut funktioniert und ansprechend aussieht, sondern auch auf verschiedenen Smartphones oder Tablets. </p>
+
+        <p>
+        Daraus lassen sich schon Gründe für responsiv Webdesign erahnen. Doch welche genau sind es denn? <br> 
+        Zum Einen führt dies zu einer verbesserte Nutzererfahrung. Nutzende verbleiben eher auf einer Seite, die leicht navigierbar und gut lesbar ist. <br>
+        Zum Anderen erhöht dies auch die Reichweite und bietet SEO Vorteile ( Google bevorzugt mobilfreundliche Webseiten in seinen Suchergebnissen, was zu einer besseren Platzierung in den Suchergebnissen führen kann ).
+       </p>
+
+       <p><span class="p-color">Wie habe ich dies umgesetzt? </span><br>
+        Ich habe für meine Webseite und kleinen Anwendungen flexible Layouts (Flex & Grid), CSS-Media-Queries und angepasste Mediendateien verwendet. <br>
+        Zur Hilfe nutzte ich dafür die Chrome Entwicklerkonsole und die Chrome Erweiterung: Responsiv-Viewer. Damit ließ sich problemlos jedes Device und mögliche Komplikationen ermitteln.</p>
+      </div>
+ 
+      <div>
+        <img src="bilder/responsiv-viewer.png" alt="Screenshot Darstellung Webseite im Responsiv Viewer(Chrome Erweiterung)" width="100%" height="">
+        <p class="img-description">Darstellung im Responsiv-Viewer</p>
+      </div>
+
+
+      
+     </div>
+    </section>
+
+
+   <section class="assets">
+    <h3>Barrierefreiheit | Seo</h3>
+    <hr>
+    <div class="assets-interaction-cart">
+
+     <div>
+      <h4>Barrierefreiheit</h4>
+      <p>
+       Ab dem 28.Juni 2025 müssen auch Webseiten, bis auf wenige Ausnahmen, barrierefrei sein. <br> 
+       Doch was genau sollte denn alles beachtet werden? <br>
+       Es gibt einige Inhalte auf Webseiten die barrierefrei sein müssen, wie Texte, Bilder, Videos und Audio. Auch Formulare, Links und Schaltflächen müssen ab Mitte 2025 eine barrierefreie Bedienbarkeit aufweisen.
+       Auf der Seite von <a style="color: var(--secondcolor);" href="https://www.aktion-mensch.de/inklusion/barrierefreiheit/barrierefreie-website/wie-barrierefrei-ist-meine-website-test">Aktion Mensch</a> findest du wertvolle Informationen rund um das Thema barrierefreie Webseiten und eine nützliche Checkliste, um die Barrierefreiheit der eigenen Webseite zu überprüfen. <br></p>
+
+
+       <p><span class="p-color">Wie habe ich dies umgesetzt? </span><br>
+       Vorrangig habe ich hier mit dem Lighthouse Tool von Chrome und WAVE gearbeitet, <br> um damit Probleme zu identifizieren und zu beheben. <br> <br>
+       Folgende Punkte habe ich dabei beachtet:
+      <ul class="webdesign-barrierefrei-list">
+       <li>eine gute Lesbarkeite der Texte, durch ein hohes Kontrastverhältnis zwischen Text und Hintergrund</li>
+      <li>Strukturierung des Inhalts, durch Nutzung von Überschriften, Absätzen und Aufzählungszeichen</li>
+      <li>Beachtung der Screenreader-Kompatibilität, durch eine korrekte Auszeichnung der Überschriftenstruktur (H1-H6)</li>
+      <li>Nutzung einer Bildbeschreibung (ALT-Texte)</li>
+      <li>Nutzung einer leichten Sprache</li>
+     </ul>
+     </p>
+     </div>
+
+     <div>
+      <h4>SEO</h4>
+      <p>
+       Search Engine Optimization, kurz SEO, ist eine Methode, um die Auffindbarkeit in Suchmaschinen zu verbessern. <br> 
+       Das heißt, dass es dazu dienen soll die Sichtbarkeit einer Website und ihrer Inhalte für Nutzende einer Suchmaschine zu erhöhen. <br> Dabei geht es vorrangig um das organische Suchmaschinenranking (Natural Listings).</p><br> 
+       <p>Da SEO ein sehr komplexes Thema ist, habe ich mich hier nur mit Teilbereichen auseinandergesetzt. <br> 
+       Wie in den Abschnitten zuvor schon benannt, zählen auch responsives Design und Barrierefreit zu SEO. <br> Ebenso auch die Ladezeiten, die Verweildauer der Nutzenden auf der Webseite, die Nutzerfreundlichkeit, eine Meta-Beschreibung, Links und einiges mehr.<br> All dies belohnt Google mit einem höherem Ranking der Webseite. <br><br>
+       Für die Umsetzung habe ich folgende Tools genutzt:
+       <ul class="webdesign-barrierefrei-list">
+        <li>Lighthouse</li>
+        <li>PageSpeed Insights</li>
+        <li>Google Search Console (Core Web Vitals-Bericht)</li>
+       </ul>
+      </p>
+     </div>
+
+     <div>
+      <img src="bilder/lighthouse.png" alt="Screenshot aus einer Leistungsüberprüfung von Google Lighthouse" width="100%" height="">
+      <p class="img-description">Auswertung Lighthouse</p>
+    </div>
+     
+    </div>
+   </section>
+
+   <section class="assets">
+    <div class="assets-headline">
+     <h3>Animation JS & CSS</h3>
+    </div>
+    <hr>
+
+     <!-- Lightbox -->
+   <div id="lightbox" style="display: none;">
+     <span onclick="closeLightbox()" class="close-btn">X</span>
+     <img id="lightbox-image" src="" alt="Lightbox Image">
+   </div>
+    
+    <div class="assets-interaction">
+
+     <div>
+      <img src="bilder/wordpress/Seiten zusammengefügt_Zeichenfläche 1.png" alt="Landingpage Möbel Shop" width="100%" height="auto" onclick="openLightbox('bilder/wordpress/Seiten zusammengefügt_Zeichenfläche 1.png')" id="lightbox-img">
+      <p>Landingpage mit den Sektionen: Kategorien und Topseller</p>
+     </div>
+
+     <div >
+       <img src="bilder/wordpress/Seiten zusammengefügt-02.png" alt="#" width="100%" height="auto" onclick="openLightbox('bilder/wordpress/Seiten zusammengefügt-02.png')" id="lightbox-img">
+      <p>Ansicht aller Produkte mit Preisauszeichnung und Möglichkeit sie dem Warenkorb hinzuzufügen</p>
+     </div>
+
+     <div>
+      <img src="bilder/wordpress/Seiten zusammengefügt-03.png" alt="#"width="100%" height="auto" onclick="openLightbox('bilder/wordpress/Seiten zusammengefügt-03.png')" id="lightbox-img">
+      <p>Produktseite: Produktbeschreibung, Zahlungsarten und Verlinkungen zu Produkten, die den Käufer*innen ebenfalls gefallen könnten</p>
+     </div>
+
+    </div>
+   </section>
+
+   <section class="assets">
+    <h3>3D Animationen</h3>
+    <hr>
+
+    <div class="assets-interaction">
+     <div>
+      <img src="bilder/wordpress/Seiten zusammengefügt-06.png" alt="#" width="100%" height="auto">
+      <p>Zusammenfassung der Bestellung</p>
+     </div>
+
+     <div>
+      <img src="bilder/wordpress/Seiten zusammengefügt_Bestellbestätigung Käufer-07.png" alt="#" width="100%" height="auto">
+      <p>Bestellbestätigung für Käufer*in</p>
+     </div>
+
+     <div>
+      <img src="bilder/wordpress/Seiten zusammengefügt_Bestellbestätigung Verkäufer.png" alt="#"width="100%" height="auto">
+      <p>Bestellinfo für Verkäufer*in</p>
+     </div>
+
+    </div>
+   </section>
+
+   <div class="pre-back-buttons">
+    <button><a href="project-webdesign.html">&#129092; Webdesign </a></button>
+    <button><a href="portfolio.html">Overview &#129094;</a></button>
+  </div>
+
+</main>
+  
+  <!--------FOOTER-------------------------->
+  
+  <footer id="side-footer">
+    <nav class="footer-nav">
+     <ul>
+      <li><a href="impressum.html">Imprint</a></li>
+      <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     </ul>
+    </nav>
+    <div class="top"><a href="#top">&#8657;</a></div>
+  </footer>
+  
+
+  <script>
+    function openLightbox(imageSrc) {
+      let lightbox = document.getElementById("lightbox");
+      let lightboxImg = document.getElementById("lightbox-image");
+      lightbox.style.display = "block";
+      
+      // Setzt die Quelle des Lightbox-Bildes auf das angeklickte Bild
+      lightboxImg.src = imageSrc;
+    }
+    
+    function closeLightbox() {
+      let lightbox = document.getElementById("lightbox");
+      lightbox.style.display = "none";
+    }
+    </script>
+    
+       
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de" id="top">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Anne Dalchow - WordPress</title>
+ <meta name="description" content="Anne Dalchow - Portfolio Webdesign WordPress WooCommerce Shopsystem">
+ <link href="css/style.css" rel="stylesheet" media="all">
+ <link rel="stylesheet" href="css/wordpress.css" media="all">
+ <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
+</head>
+
+<body>
+ <!--------HEADER-------------------------->
+ <header> 
+  <nav>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <input type="checkbox" id="toggle_button">
+   <label for="toggle_button" class="toggle_button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </label>
+
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About&nbsp;me</a></li>
+    <li class="expandable_li">
+      <input type="checkbox" id="work_checkbox">
+      <label for="work_checkbox">&#9776; Portfolio</label>
+         <ul class="dropdown">
+          <li><a href="portfolio.html">Overview</a><hr class="hr-nav"></li>
+          <li><a href="project-webdesign.html">Webdesign</a><hr class="hr-nav"></li>
+          <li><a href="project-prints.html">Prints</a><hr class="hr-nav"></li>
+          <li><a href="project-illustration.html">Graphics</a></li>
+        </ul>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+</header> 
+
+ <!-------------------MAIN----------------------->
+
+<main class="background-dark" id="page-background">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="project-webdesign.html">Web Design</a></li>
+    <li>Projekt 4</li>
+  </ul>
+  <section id="site-hero-dark">
+    <div class="inside">
+      <h1>WordPress</h1>
+      <hr>
+      <div class="dropdown-projectsites">
+        <button class="dropbtn">Overview <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="portfolio.html">All</a>
+            <a href="project-webdesign.html" >Webdesign</a>
+            <a href="project-prints.html">Prints</a>
+            <a href="project-illustration.html">Graphics</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="wrapper-project-appdesign">
+    <section class="project-appdesign-first-section">
+      <div class="project-appdesign-img">
+        <img src="/bilder/wordpress/Mockup_alle Geräte_oh.png" alt="Mockup WordPress Seite auf unterschiedlichen Geräten" width="100%" height="auto">
+      </div>
+      <div class="project-text-container-appdesign">
+        <h2>Wordpress Shop</h2>
+        <p><span class="smallCaps">Shopsystem | WooCommerce | Elementor</span></p>
+        <br> <br>
+
+        <p>Im Rahmen meiner Weiterbildung im Modul WordPress habe ich einen Möbel Shop <br> mit WooCommerce und Elementor erstellt. <br>
+         Im Folgenden zeige ich Ausschnitte von der Webseite und durchlaufe dabei eine Beispielbestellung.
+        </p>
+
+
+
+       <div class="assets-plugins">
+        <p>Genutzte Plugins:</p>
+        <div>
+         <p>
+          WooCommerce <br>
+          Germanized für WooCommerce <br>
+          Germanized für WooCommerce: One Stop Shop <br>
+          WooCommerce Shipping & Tax <br>
+          WooPayments
+         </p>
+        </div>
+        <div>
+         <p>
+          Elementor <br>
+          Essential Addons for Elementor <br>
+          Templaty <br>
+          Jetpack
+        </p>
+        </div>
+       </div>
+
+     </div>
+    </section>
+
+
+    <section class="assets">
+     <div class="assets-headline">
+      <h3>Seitenaufbau</h3>
+     </div>
+     <hr>
+
+      <!-- Lightbox -->
+    <div id="lightbox" style="display: none;">
+      <span onclick="closeLightbox()" class="close-btn">X</span>
+      <img id="lightbox-image" src="" alt="Lightbox Image">
+    </div>
+     
+     <div class="assets-interaction">
+
+      <div>
+       <img src="bilder/wordpress/Seiten zusammengefügt_Zeichenfläche 1.png" alt="Landingpage Möbel Shop" width="100%" height="auto" onclick="openLightbox('bilder/wordpress/Seiten zusammengefügt_Zeichenfläche 1.png')" id="lightbox-img">
+       <p class="img-description">Landingpage mit den Sektionen: Kategorien und Topseller</p>
+      </div>
+
+      <div >
+        <img src="bilder/wordpress/Seiten zusammengefügt-02.png" alt="#" width="100%" height="auto" onclick="openLightbox('bilder/wordpress/Seiten zusammengefügt-02.png')" id="lightbox-img">
+       <p class="img-description">Ansicht aller Produkte mit Preisauszeichnung und Möglichkeit sie dem Warenkorb hinzuzufügen</p>
+      </div>
+
+      <div>
+       <img src="bilder/wordpress/Seiten zusammengefügt-03.png" alt="#"width="100%" height="auto" onclick="openLightbox('bilder/wordpress/Seiten zusammengefügt-03.png')" id="lightbox-img">
+       <p class="img-description">Produktseite: Produktbeschreibung, Zahlungsarten und Verlinkungen zu Produkten, die den Käufer*innen ebenfalls gefallen könnten</p>
+      </div>
+
+     </div>
+    </section>
+
+
+   <section class="assets">
+    <h3>Warenkorb</h3>
+    <hr>
+    <div class="assets-interaction-cart">
+
+     <div>
+       <img src="bilder/wordpress/Seiten zusammengefügt-04.png" alt="#" width="100%" height="">
+       <p class="img-description">Hinweis Produkt wurde dem Warenkorb hinzugefügt</p>
+     </div>
+
+     <div>
+       <img src="bilder/wordpress/Seiten zusammengefügt_Bestellbestätigung Käufer-05.png" alt="#" width="100%" height="">
+       <p class="img-description">Warenkorb Ansicht mit: Produktauflistung, Mehrwertsteuer (je nach Land) und Versandkosten</p>
+     </div>
+     
+    </div>
+   </section>
+
+   <section class="assets">
+    <h3>Backend WooCommerce</h3>
+    <hr>
+
+    <div class="assets-interaction-cart">
+     <div>
+      <img src="bilder/wordpress/WooCommerce Backend_Steuersätze.png" alt="#" width="100%" height="auto">
+      <p class="img-description">Steuersätze</p>
+     </div>
+
+     <div>
+      <img src="bilder/wordpress/WooCommerce Backend_Versandzonen.png" alt="#" width="100%" height="auto">
+      <p class="img-description">Versandzonen</p>
+     </div>
+
+     <div>
+      <img src="bilder/wordpress/WooCommerce Backend_Versandklassen.png" alt="#" width="100%" height="auto">
+      <p class="img-description">Versandklassen</p>
+     </div>
+
+    </div>
+   </section>
+
+   <section class="assets">
+    <h3>Bestellvorgang</h3>
+    <hr>
+
+    <div class="assets-interaction">
+     <div>
+      <img src="bilder/wordpress/Seiten zusammengefügt-06.png" alt="#" width="100%" height="auto">
+      <p class="img-description">Zusammenfassung der Bestellung</p>
+     </div>
+
+     <div>
+      <img src="bilder/wordpress/Seiten zusammengefügt_Bestellbestätigung Käufer-07.png" alt="#" width="100%" height="auto">
+      <p class="img-description">Bestellbestätigung für Käufer*in</p>
+     </div>
+
+     <div>
+      <img src="bilder/wordpress/Seiten zusammengefügt_Bestellbestätigung Verkäufer.png" alt="#"width="100%" height="auto">
+      <p class="img-description">Bestellinfo für Verkäufer*in</p>
+     </div>
+
+    </div>
+   </section>
+
+   <div class="pre-back-buttons">
+    <button><a href="project-webdesign.html">&#129092; Webdesign </a></button>
+    <button><a href="portfolio.html">Overview &#129094;</a></button>
+  </div>
+
+</main>
+  
+  <!--------FOOTER-------------------------->
+  
+  <footer id="side-footer">
+    <nav class="footer-nav">
+     <ul>
+      <li><a href="impressum.html">Imprint</a></li>
+      <li><a href="datenschutz.html">Privacy&nbsp;Policy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     </ul>
+    </nav>
+    <div class="top"><a href="#top">&#8657;</a></div>
+  </footer>
+  
+
+  <script>
+    function openLightbox(imageSrc) {
+      let lightbox = document.getElementById("lightbox");
+      let lightboxImg = document.getElementById("lightbox-image");
+      lightbox.style.display = "block";
+      
+      // Setzt die Quelle des Lightbox-Bildes auf das angeklickte Bild
+      lightboxImg.src = imageSrc;
+    }
+    
+    function closeLightbox() {
+      let lightbox = document.getElementById("lightbox");
+      lightbox.style.display = "none";
+    }
+    </script>
+    
+       
+</body>
+</html>
