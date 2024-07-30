@@ -7,7 +7,13 @@
   --accentcolor: rgb(165, 135, 78);
 }
 
-#wrapper-project-appdesign {
+p {
+  color: white;
+  text-align: left;
+}
+
+#wrapper-project-webdev,
+#wrapper-project-wordpress {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -15,7 +21,8 @@
   max-width: 1300px;
 }
 
-.project-appdesign-first-section {
+.project-webdev-first-section,
+.project-wordpress-first-section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -25,38 +32,39 @@
   background-color: var(--maincolor);
 }
 
-.project-appdesign-img {
+.project-webdev-img,
+.project-wordpress-img {
   width: 60%;
   align-self: flex-end;
 }
 
-.project-text-container-appdesign {
+.project-text-container-webdev,
+.project-text-container-wordpress {
   width: 100%;
   align-self: flex-start;
   border-radius:15px;
   padding: 20px 30px 60px 30px;
 }
 
-.project-text-container-appdesign h2 {
+.project-text-container-webdev h2,
+.project-text-container-wordpress h2 {
  text-align: left;
 }
 
-.project-text-container-appdesign .smallCaps {
+.project-text-container-webdev .smallCaps,
+.project-text-container-wordpress .smallCaps {
   font-size: 1.75rem;
   font-variant: small-caps;
   color: white;
 }
-.project-text-container-appdesign h3{
+
+.project-text-container-webdev h3,
+.project-text-container-wordpress h3{
  color: white;
  text-align: left;
  font-variant: normal;
 }
 
-
-p {
-  color: white;
-  text-align: left;
-}
 .img-description{
   color: white;
   text-align: center;
@@ -70,7 +78,6 @@ p {
  padding-top: 50px;
  border-top: 1px solid var(--secondcolor);
 }
-
 
 .assets {
   background-color: rgba(51, 51, 51, 0.95);
@@ -113,6 +120,7 @@ p {
   justify-content: center;
 }
 
+.assets-textfield,
 .assets-interaction-cart{
  display: flex;
  flex-flow: column wrap;
@@ -132,6 +140,7 @@ p {
  border-radius: 15px;
 }
 
+.assets-textfield div,
 .assets-interaction-cart div{
  display: flex;
  flex-flow: column wrap;
@@ -141,6 +150,7 @@ p {
  padding: 40px 20px;
  border-radius: 15px;
 }
+
 
 .assets-interaction-cart img,
 .assets-interaction img{
@@ -182,12 +192,7 @@ p {
   cursor: pointer;
 }
 
-
-
-
-
-
-/*****WEBSITE DESIGN************/
+/*****WEBDEVELOPMENT************/
 
 .webdesign-barrierefrei-list,
 .webdesign-barrierefrei-list li,
@@ -197,7 +202,7 @@ p {
   margin: 0 auto;
 }
 
-.assets-interaction-cart h4{
+.assets-textfield h4{
   text-align: left;
   margin-bottom: 20px;
 }
@@ -219,7 +224,8 @@ p {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .project-appdesign-description {
+  .project-wordpress-description,
+  .project-webdev-description {
     width: 40%;
   }
   .assets-interaction div{
@@ -229,20 +235,19 @@ p {
 
 @media (max-width: 768px) {
 
-  .project-appdesign-img,
-  .project-appdesign-img {
-    width: 100%;
-  }
-  .project-appdesign-first-section {
-    padding:10px;
-    margin-bottom: 100px;
-  }
-  .project-appdesign-img {
+  .project-webdev-img,
+  .project-wordpress-img {
     width: 100%;
     align-self: center;
   }
+  .project-wordpress-first-section,
+  .project-webdev-first-section {
+    padding:10px;
+    margin-bottom: 100px;
+  }
 
-  .project-text-container-appdesign {
+  .project-text-container-webdev,
+  .project-text-container-wordpress {
     align-self: center;
     padding: 20px 10px;
   }
@@ -265,6 +270,7 @@ p {
     width: 100%;
     padding: 10px;
   }
+  .assets-textfield div,
   .assets-interaction-cart div{
     padding: 10px;
    }
@@ -272,10 +278,12 @@ p {
 }
 
 @media (max-width: 480px) {
-  .project-text-container-appdesign {
+  .project-text-container-webdev,
+  .project-text-container-wordpress {
     border-radius: 100px 5px;
   }
-  .project-appdesign-img img {
+  .project-webdev-img img,
+  .project-wordpress-img img {
     max-width: 100%;
   }
 

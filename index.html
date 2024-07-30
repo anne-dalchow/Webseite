@@ -17,7 +17,7 @@
  <!--------HEADER-------------------------->
  <header> 
   <nav>
-   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <label class="logo"><a href="#"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow führt zur Landingpage"></a></label>
    <input type="checkbox" id="toggle_button">
    <label for="toggle_button" class="toggle_button">
        <span class="bar"></span>
@@ -26,7 +26,7 @@
    </label>
 
    <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Home</a></li>
     <li><a href="about.html">About&nbsp;me</a></li>
     <li class="expandable_li">
       <input type="checkbox" id="work_checkbox">
@@ -64,13 +64,13 @@
           Ich heiße dich herzlich willkommen in meinem kleinen Atelier für künstlerisches Design! <br>
           Ich wünsche dir viel Spaß beim Erkunden meines Portfolios. Lass dich von meinen Projekten inspirieren und uns gemeinsam eine kreative Reise beginnen!
          </p>
-          <div class="home-button-container">
-            <button><a href="portfolio.html">Portfolio</a></button>
-            <button><a href="contact.html">Contact</a></button>
+          <div class="button-container-dark-background">
+            <a href="portfolio.html"><button>Portfolio</button></a>
+            <a href="contact.html"><button>Contact</button></a>
           </div>
        </div>
        <div class="imgcontainer-home">
-        <img src="bilder/Logo.png" alt="" width="500px">
+        <img src="bilder/Logo.png" alt="Logo Anne Dalchow" width="500px">
        </div>
       </div>
       <div class="icon-container">
@@ -92,7 +92,7 @@
       <picture>
           <source media="(max-width:650px)" srcset="bilder/minimize/avatar_logo_kreise_klein.svg">
           <source media="(min-width:801px)" srcset="bilder/minimize/avatar_logo_kreise.svg">
-          <img src="bilder/minimize/avatar_logo_kreise.svg" alt="Avatar Logo">
+          <img src="bilder/minimize/avatar_logo_kreise.svg" alt="">
       </picture>
     </figure>
    </div>
@@ -103,19 +103,22 @@
       <h4>Anne Dalchow</h4>
       <hr>
     </div>
-    <p>
-      Willkommen auf meiner Seite!
-    </p>
-    <p>
-      Als gelernte Medientechnologin Druck und angehende Grafik- und Webdesignerin vereine ich handwerkliches Können mit kreativem Design.
-    </p>
-    <p>
-      In meinem <a href="portfolio.html">Portfolio</a> findest du spannende kunstvolle Illustrationen und drucktechnischen Umsetzungen.
-      Werfe gerne einen Blick hinein!
-    </p>
+    <div>
+      <p>
+        Willkommen auf meiner Seite!
+      </p>
+      <p>
+        Als gelernte Medientechnologin Druck und angehende Grafik- und Webdesignerin vereine ich handwerkliches Können mit kreativem Design.
+      </p>
+      <p>
+        In meinem Portfolio findest du spannende kunstvolle Illustrationen und drucktechnischen Umsetzungen.
+        Werfe gerne einen Blick hinein!
+      </p>
+    </div>
 
-    <div class="link-about">
-      <a href="about.html">Mehr über mich</a>
+    <div class="button-container-light-background">
+      <a href="portfolio.html"><button>Portfolio</button></a>
+      <a href="about.html"><button>Mehr über mich</button></a>
     </div>
    </div>
   </div>
@@ -130,39 +133,39 @@
       <div id="work-img">
         <div class="work-textfield">
           <p>Hier findest du eine kleine Auswahl <br>meiner aktuellen Projekte <br> in den Bereichen <br> Print-, Grafik- und Webdesign.</p><br><br>
-          <button><a href="portfolio.html">Zum Portfolio </a></button>
+            <a href="portfolio.html" class="button-container-dark-background"><button>Zum Portfolio</button></a>
         </div>
 
-        <div>
+        <div class="work-category">
           <a href="project-webdesign.html">
             <figure class="work-short-img">
               <picture>
                   <source media="(max-width:500px)" srcset="bilder/Vorschau/web_Vorschau.png">
                   <source media="(max-width:768px)" srcset="bilder/Vorschau/web_Vorschau_2span.png">
-                  <img src="bilder/Vorschau/web_Vorschau_2span.png" alt="Mockup Webseiten Design" class="work-short-img">
+                  <img src="bilder/Vorschau/web_Vorschau_2span.png" alt="Vorschaubild für die Kategorie Webdesign. Führt zu der Seite Webdesign" class="work-short-img">
               </picture>
             </figure>
           </a>
         </div>
 
-        <div>
+        <div class="work-category">
           <a href="project-prints.html">
             <figure class="work-short-img">
               <picture>
                   <source media="(max-width:500px)" srcset="bilder/Vorschau/print_design_Vorschau_span1.png">
-                  <img src="bilder/Vorschau/print_design_Vorschau.png" alt="Mockup Print Technology" class="work-short-img">
+                  <img src="bilder/Vorschau/print_design_Vorschau.png" alt="Vorschaubild für die Kategorie Druck. Führt zu der Seite Drucke" class="work-short-img">
               </picture>
             </figure>
           </a>
         </div>
 
-        <div>
+        <div class="work-category">
           <a href="project-illustration.html">
             <figure class="work-short-img">
               <picture>
                   <source media="(max-width:500px)" srcset="bilder/Vorschau/print_Vorschau.png">
                   <source media="(max-width:768px)" srcset="bilder/Vorschau/print_Vorschau_2span.png">
-                  <img src="bilder/Vorschau/print_Vorschau.png" alt="Mockup Flyer Design" class="work-short-img">
+                  <img src="bilder/Vorschau/print_Vorschau.png" alt="Vorschaubild für die Kategorie Grafiken. Führt zu der Seite Grafik und Illustrationen" class="work-short-img">
               </picture>
             </figure>
           </a>

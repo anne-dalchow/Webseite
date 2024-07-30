@@ -9,27 +9,13 @@
  <link href="css/style.css" rel="stylesheet" media="all">
  <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
 
- <style>
-   .hidden-portfolio {
-     visibility: hidden;
-     opacity: 0;
-     height: 0; /* Höhe auf 0 setzen */
-   }
-   .fade-in-portfolio {
-     opacity: 1;
-     visibility: visible;
-     height: auto; /* Höhe zurücksetzen */
-     transition: opacity 2s ease-in, height 2s ease-in; /* Übergang für Höhe hinzufügen */
-   }
-  
- </style>
 </head>
 
 <body>
  <!--------HEADER-------------------------->
  <header> 
   <nav>
-   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow"></a></label>
+   <label class="logo"><a href="index.html"><img src="bilder/minimize/Logo_Anne-01.svg" alt="Logo Anne Dalchow führt zur Landingpage"></a></label>
    <input type="checkbox" id="toggle_button">
    <label for="toggle_button" class="toggle_button">
        <span class="bar"></span>
@@ -83,7 +69,7 @@
   <section class="project-work-slider">
     <div class="slideshow-container">
         <div class="slide">
-          <img src="/bilder/Vorschau/Mockup_website_Zeichenfläche 1.png" alt="Mockup Webseiten">
+          <img src="/bilder/Vorschau/Mockup_website_Zeichenfläche 1.png" alt="Slider Bild mit der Vorschau für die Kategorie Webdesign. ">
             <div class="slide-textbereich">
               <h2 class="slide-ueberschrift"> 
                Web Design
@@ -95,7 +81,7 @@
         </div>
          
         <div class="slide">
-          <img src="/bilder/Vorschau/Mockup_prints_Zeichenfläche 1.png" alt="thread-counter von markusspiske auf pixabay">
+          <img src="/bilder/Vorschau/Mockup_prints_Zeichenfläche 1.png" alt="Slider Bild mit der Vorschau für die Kategorie Drucke.">
             <div class="slide-textbereich">
               <h2 class="slide-ueberschrift"> 
                Print Design
@@ -107,7 +93,7 @@
         </div>
          
         <div class="slide">
-          <img src="/bilder/Vorschau/Mockup_graphics_Zeichenfläche 1.png" alt="Motte">
+          <img src="/bilder/Vorschau/Mockup_graphics_Zeichenfläche 1.png" alt="Slider Bild mit der Vorschau für die Kategorie Grafiken.">
             <div class="slide-textbereich">
               <h2 class="slide-ueberschrift"> 
                Graphic Design
@@ -150,40 +136,40 @@
       <a class="next" onclick="nextImage()">&#10095;</a>
     </div>
     <div class="column">
-      <img src="bilder/prototyp_ansichtquer_Zeichenfläche 1.png" alt="" width="500" height="700" onclick="openLightbox('bilder/prototyp_ansichtquer_Zeichenfläche 1.png')">
-      <img src="bilder/Galerie/Autumn_Illu_500x700.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Autumn_Illu_500x700.png')">
-      <img src="bilder/shirts/Shirts_Var4.png" alt="" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var4.png')">
-      <img src="bilder/Galerie/Illu_Sonne.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Glühmond.png')">
+      <img src="bilder/prototyp_ansichtquer_Zeichenfläche 1.png" alt="Illustration von Handys die quer über das Bild gehen mit der App Mindful Path" width="500" height="700" onclick="openLightbox('bilder/prototyp_ansichtquer_Zeichenfläche 1.png')">
+      <img src="bilder/Galerie/Autumn_Illu_500x700.png" alt="Vektorillustration einer herbstlichen Naturlandschaft mit zwei Bäumen, Gräsern, Bergen und einem Vogel links" width="500" height="700" onclick="openLightbox('bilder/Galerie/Autumn_Illu_500x700.png')">
+      <img src="bilder/shirts/Shirts_Var4.png" alt="weißes T-shirt mit schwarz rotem Aufdruck. Aufdruck ist eine Weltkugel" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var4.png')">
+      <img src="bilder/Galerie/Illu_Sonne.png" alt="Vektorillustration einer Berglandschaft mit Planeten bei Nacht" width="500" height="700" onclick="openLightbox('bilder/Glühmond.png')">
     </div>
     <div class="column">
-      <img src="bilder/todo app.png" alt="" width="500" height="700" onclick="openLightbox('bilder/abstract-6047465.jpg')">
-      <img src="bilder/Galerie/Tag und Nacht_abgeschlossen.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Tag und Nacht_abgeschlossen.png')">
-      <img src="bilder/Galerie/universe-02.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/FB_IMG_1555167081715.jpg')">
-      <img src="bilder/Kassette_var3.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Kassette_var3.png')">
+      <img src="bilder/todo app.png" alt="Vorschau der To Do Anwendung" width="500" height="700" onclick="openLightbox('bilder/abstract-6047465.jpg')">
+      <img src="bilder/Galerie/Tag und Nacht_abgeschlossen.png" alt="Bildbearbeitung einer Nachtszene. Ein Bully fährt eine Straße in einer Gebirgslandschaft entlang." width="500" height="700" onclick="openLightbox('bilder/Galerie/Tag und Nacht_abgeschlossen.png')">
+      <img src="bilder/Galerie/universe-02.png" alt="3D Illustration in mint grün und lila Verlauf im Hintergrund von zwei Handys" width="500" height="700" onclick="openLightbox('bilder/Galerie/FB_IMG_1555167081715.jpg')">
+      <img src="bilder/Kassette_var3.png" alt="UV Druck auf zwei Kassettenhüllen. Logo Design von der Firma TAPE MUZIK den ich erstellt habe" width="500" height="700" onclick="openLightbox('bilder/Kassette_var3.png')">
     </div>
     <div class="column">
-      <img src="bilder/spline_roboter_Zeichenfläche 1.svg" alt="" width="500" height="700" onclick="openLightbox('bilder/spline_roboter_Zeichenfläche 1.svg')">
-      <img src="bilder/Galerie/Frau_Illustration_Zeichenfläche 1.png" alt="" width="500" height="700" onclick="openLightbox('bilder/todo app.png')">
-      <img src="bilder/shirts/Shirts_Var2.png" alt="" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var2.png')">
-      <img src="bilder/Galerie/universe-03.png" alt="Laptop und Handy Vektorillustration" width="500" height="700" onclick="openLightbox('bilder/Prototypen Handy-01-01-01.png')">
+      <img src="bilder/spline_roboter_Zeichenfläche 1.svg" alt="Vorschau von einem Roboter in 3D. Schwarzer Hintergrund mit lila und weißen Spotlichtern die auf ihn scheinen. Er steht auf einem Podest" width="500" height="700" onclick="openLightbox('bilder/spline_roboter_Zeichenfläche 1.svg')">
+      <img src="bilder/Galerie/Frau_Illustration_Zeichenfläche 1.png" alt="Vektorillustration einer Frau bis zur Brust. Sie trägt einen Dutt, hat braune Haare, einen goldenen Dreiecksohring und rosige Wangen. Sie lächelt und schaut nach rechts. Umrahmt ist sie von ein paar Blättern und einem Kreis" width="500" height="700" onclick="openLightbox('bilder/todo app.png')">
+      <img src="bilder/shirts/Shirts_Var2.png" alt="Aufdruck auf weißem T-shirt mit einer Motte, die umgeben von drei Kreisen ist. Der Aufdruck ist in schwarz weiß." width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var2.png')">
+      <img src="bilder/Galerie/universe-03.png" alt="Laptop und Handy Vektorillustration in 3D" width="500" height="700" onclick="openLightbox('bilder/Prototypen Handy-01-01-01.png')">
     </div>
     <div class="column hidden-portfolio">
-      <img src="bilder/Kassette_var2.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Kassette_var2.png')">
-      <img src="bilder/shirts/Shirts_Var1.png" alt="" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var1.png')">
-      <img src="bilder/Galerie/Glühmond.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Glühmond.png')">
-      <img src="bilder/Galerie/neon_light_effect.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/neon_light_effect.png')">
+      <img src="bilder/Kassette_var2.png" alt="Faltschachteln bedruckt für Kassetten. Ein Beispielbild für Faltschachteln und den Druck" width="500" height="700" onclick="openLightbox('bilder/Kassette_var2.png')">
+      <img src="bilder/shirts/Shirts_Var1.png" alt="Aufdruck auf schwarzem T-shirt mit einem abstrakten katzenartigen/menschlichen Kopf" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var1.png')">
+      <img src="bilder/Galerie/Glühmond.png" alt="Bildcomposition ein Mond in einer Glühbirne liegt auf dem Boden. Ein Mensch, kleiner als die Glühbirne steht daneben und schaut in den Himmel" width="500" height="700" onclick="openLightbox('bilder/Galerie/Glühmond.png')">
+      <img src="bilder/Galerie/neon_light_effect.png" alt="Bildbearbeitung einer Frau die ein neon Effekt um ihren Kopf hat. Farbänderung in ein lila blauen Ton." width="500" height="700" onclick="openLightbox('bilder/Galerie/neon_light_effect.png')">
     </div>
     <div class="column hidden-portfolio">
-      <img src="bilder/BMI Rechner.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Illu_700x300.png')">
-      <img src="bilder/Webseite Kassette.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Webseite Kassette.png')">
-      <img src="bilder/Galerie/Illu_Welt.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Illu_Welt.png')">
-      <img src="bilder/Galerie/Mensch Farbe.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Mensch Farbe.png')">
+      <img src="bilder/BMI Rechner.png" alt="Vorschaubild von der Anwendung BMI Rechner" width="500" height="700" onclick="openLightbox('bilder/Illu_700x300.png')">
+      <img src="bilder/Webseite Kassette.png" alt="Kassetten mit farbigen Aufdruck von der Firma TAPE MUZIK den ich erstellt habe" width="500" height="700" onclick="openLightbox('bilder/Webseite Kassette.png')">
+      <img src="bilder/Galerie/Illu_Welt.png" alt="Schraffurzeichnung einer Weltkugel mit türkisem Wasser. Einige Stücke von der Welt lösen sich ab. Die Weltkugel ist in einem Polygon-Glas-Käfig" width="500" height="700" onclick="openLightbox('bilder/Galerie/Illu_Welt.png')">
+      <img src="bilder/Galerie/Mensch Farbe.png" alt="Schraffurzeichnung eines sehr hageren Menschen, welcher die rechte Hand nach vorne zeigt. In der Handfläche ist ein Auge, womit er schauen kann. Denn sein Gesicht ist eine Weltkugel, die Verbunden ist mit einem Stück Stoff.Seine Haare sind zwei Tentakel die sich um den Kopf ranken." width="500" height="700" onclick="openLightbox('bilder/Galerie/Mensch Farbe.png')">
     </div>
     <div class="column hidden-portfolio">
-      <img src="bilder/Galerie/Poster.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Poster.png')">
-      <img src="bilder/Galerie/Motte.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Motte.png')">
-      <img src="bilder/Galerie/Visitenkarte.png" alt="" width="500" height="700" onclick="openLightbox('bilder/Galerie/Visitenkarte.png')">
-      <img src="bilder/shirts/Shirts_Var5.png" alt="" width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var5.png')">
+      <img src="bilder/Galerie/Poster.png" alt="Minimalistische Illustration von Kreisen, Strichen und einer Rasterfüllung der Kreise" width="500" height="700" onclick="openLightbox('bilder/Galerie/Poster.png')">
+      <img src="bilder/Galerie/Motte.png" alt="Digitale Zeichnung einer Motte" width="500" height="700" onclick="openLightbox('bilder/Galerie/Motte.png')">
+      <img src="bilder/Galerie/Visitenkarte.png" alt="Mockup einer erstellten Visitenkarte. Thema Kunsthandwerk." width="500" height="700" onclick="openLightbox('bilder/Galerie/Visitenkarte.png')">
+      <img src="bilder/shirts/Shirts_Var5.png" alt="Aufdruck auf schwarzem T-shirt mit einem abstrakten geometrischen organischen Element." width="500" height="700" onclick="openLightbox('bilder/shirts/Shirts_Var5.png')">
     </div>
   </div>
   <button id="load-more" onclick="loadMore()">Load More</button>

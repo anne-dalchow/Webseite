@@ -101,6 +101,46 @@ a {
  font-size: 1rem;
 }
 
+button{
+  font-size: 1rem;
+}
+
+.button-container-light-background,
+.button-container-dark-background{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+
+}
+.button-container-dark-background button{
+  cursor: pointer;
+  padding: 12px 22px;
+  border: 1px solid var(--secondcolor);
+  border-radius: 15px;
+  background-color: var(--maincolor-lighter);
+  color: white;
+}
+
+.button-container-dark-background a button:hover {
+  background-color: var(--secondcolor);
+  color: var(--maincolor-darker);
+ }
+
+.button-container-light-background button{
+  cursor: pointer;
+  padding: 12px 22px;
+  border: 1px solid var(--maincolor-darker);
+  border-radius: 15px;
+}
+
+.button-container-light-background a{
+  color: var(--maincolor-darker);
+}
+.button-container-light-background a button:hover {
+ background-color: var(--secondcolor);
+}
+
+
 h3 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
@@ -166,7 +206,7 @@ hr {
   min-height: 90vh;
 }
 
-.link-about a,li, .button, .button-work, .column img:hover , .column3 img:hover{transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;}
+.button-container-light-background button,.button-container-dark-background button,#work-img .work-textfield button,.pre-back-buttons button, .button-work, .column img, .column3 img{transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;}
 
 
 /********* 1.2 Fonts ************/
@@ -529,7 +569,6 @@ ul.breadcrumb li a:hover {
 #home .inside{
   max-width: 1400px;
   margin: 0 auto 0 auto;
-  padding: 20px 20px 5px 20px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -567,24 +606,7 @@ font-family: 'Poppins', sans-serif;
 .textfield-home p{
   font-size: 1.25rem;
   color: var(--whitecolor);
-}
-
-.home-button-container{
-  display: flex;
-  flex-flow: row wrap;
-  gap: 40px;
-  margin: 100px 0 50px 0;
-}
-.home-button-container button{
-  cursor: pointer;
-  padding: 10px 20px;
-  border: 1px solid var(--secondcolor);
-  border-radius: 15px;
-  background-color: var(--maincolor-lighter);
-}
-
-.home-button-container button a{
-  color: var(--whitecolor);
+  margin-bottom: 50px;
 }
 
 .imgcontainer-home{
@@ -600,7 +622,7 @@ font-family: 'Poppins', sans-serif;
   padding: 0 0 50px 0;
 }
 .icon-container .icon-link {
- font-size: 75px;
+ font-size: 5rem;
  color: var(--secondcolor); 
 }
 
@@ -636,6 +658,10 @@ font-family: 'Poppins', sans-serif;
  text-align: left;
 }
 
+.about-container .text-container div{
+  margin-bottom: 50px;
+}
+
 .text-header{
   margin-bottom: 50px;
   font-style: italic;
@@ -653,18 +679,7 @@ font-family: 'Poppins', sans-serif;
   height: 1px;
 }
 
-.text-container a {
-  text-decoration: underline;
-}
 
-.link-about a {
- text-decoration: underline;
- font-variant: normal;
-}
-
-.link-about a:hover {
- color: var(--secondcolor);
-}
 
 /**************** 2.3 WORK SHORT ****************/
 
@@ -693,60 +708,27 @@ font-family: 'Poppins', sans-serif;
   gap: 40px;
 }
 
-#work-img .work-textfield button{
-  padding: 5px 10px;
-  border-radius: 15px;
-  background-color: var(--maincolor);
-  border: 1px solid var(--secondcolor);
-  float: left;
-}
-
-#work-img .work-textfield a {
-  color: var(--secondcolor);
-  font-variant: normal;
-  font-size: 1.1rem;
-}
-
-#work-img .work-textfield button:hover{
-  background-color: var(--secondcolor);
-}
-
-#work-img .work-textfield button:hover a{
-  color: var(--maincolor);
-}
-
-#work-img div a:hover{
-  transform: scale(1.2);
+#work-img .work-category:hover{
+  transform: scale(1.05);
 }
 
 #work-img .work-textfield p{
   color: white;
   text-align: left;
-  font-size: 1.1rem;
-
 }
 
-#work-img div{
+#work-img .work-category{
   width: 100%;
   overflow: hidden;
 }
 
-#work-img div figure img{
+#work-img .work-category figure img{
   width: 100%;
-  opacity: 0.85;
   border-radius: 30px;
 }
 
-.work-short-img{
-  margin: 0;
-} 
-
-#work-img a:hover{
+#work-img .work-category:hover{
   transition: all 1500ms;-webkit-transition: all 1500ms; -moz-transition: all 1500ms; -o-transition: all 1500ms;
-}
-
-#work-img img:hover{
-  opacity: 1;
 }
 
 #work-img div:first-child{
@@ -840,28 +822,19 @@ font-family: 'Poppins', sans-serif;
   border-radius: 5px;
 }
 
-.img-container .buttons{
+.img-container .button-container-dark-background{
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 70%;
   margin: 50px auto;
   align-content: center;
   justify-content: center;
 }
 
-.img-container .buttons a{
-  font-variant: normal;
-  font-size: 1rem;
-}
-
-.buttons button {
-  padding: 7px 10px 7px 10px;
-  margin: 0 10px;
-  color: var(--maincolor);
-  background-color: var(--secondcolor);
-  border: hidden;
-  border-radius: 5px;
+.img-container .button-container-dark-background button{
+  padding: 12px 100px;
+  background-color: var(--accentcolor);
+  color: var(--maincolor-darker);
 }
 
 .skill-header h3{
@@ -1029,6 +1002,18 @@ font-family: 'Poppins', sans-serif;
 }
 /******* END SITE HERO ********/
 
+.hidden-portfolio {
+  visibility: hidden;
+  opacity: 0;
+  height: 0; /* Höhe auf 0 setzen */
+}
+.fade-in-portfolio {
+  opacity: 1;
+  visibility: visible;
+  height: auto; /* Höhe zurücksetzen */
+  transition: opacity 2s ease-in, height 2s ease-in; /* Übergang für Höhe hinzufügen */
+}
+
 
 /****** 4.2 Gallery ******/
 
@@ -1156,7 +1141,7 @@ font-family: 'Poppins', sans-serif;
   }
   .dropdown-content a:hover {background-color: var(--accentcolor)}
 
-  .dropdown-content .current {background-color: var(--accentcolor)}
+  .dropdown-content .current {background-color: var(--accentcolor); color: var(--maincolor-darker);}
   
   .dropdown-projectsites:hover .dropbtn {
     background-color:var(--accentcolor);
@@ -1249,21 +1234,28 @@ font-family: 'Poppins', sans-serif;
   margin-bottom: 8%;
 }
 
+.pre-back-buttons{
+  margin:50px 0px 100px 0px;
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-content: center;
+}
 .pre-back-buttons button{
-  padding: 7px 15px;
-  margin: 10px 40px;
-  background-color: var(--secondcolor);
-  border: hidden;
-  border-radius: 10px;
+  cursor: pointer;
+  padding: 12px 22px;
+  background-color: var(--maincolor-darker);
+  border: 1px solid var(--secondcolor);
+  border-radius: 15px;
+  color: white;
 }
 
 .pre-back-buttons button:hover{
-  background-color: var(--whitecolor);
+  background-color: var(--secondcolor);
+  color: var(--maincolor-darker);
 }
 
-.pre-back-buttons button a:hover{
- color:var(--maincolor);
-}
+
 
 
 /****************** 5.3 Slider *********************/
@@ -2011,8 +2003,6 @@ form textarea {
 
   .about-long .img-container img{width: 60%; padding-top: 30px;}
 
-  .about-long .buttons button {margin-bottom: 10px;}
-  
   .skills h4{
     font-size: 1.2rem;
      }
@@ -2087,8 +2077,7 @@ margin-bottom: 5px;
   padding: 50px;
 }
 .icon-container .icon-link {
- font-size: 2.5rem;
- color: var(--secondcolor); 
+ font-size: 3rem;
 }
 
 .icon-link:hover {
@@ -2128,7 +2117,6 @@ margin-bottom: 5px;
   order: 1;
 }
 
-
 .textfield-home h1,
 .textfield-home h2,
 .textfield-home p{
@@ -2140,12 +2128,7 @@ font-size: 2rem;
 .textfield-home h2{
   font-size: 1.75rem;
 }
-.home-button-container{
-  margin: 70px 0 50px 0;
-}
-.home-button-container button{
-  padding: 7px 15px;
-}
+
 .imgcontainer-home img{
   width: 100%;
   margin-top: 50px;
@@ -2154,6 +2137,11 @@ font-size: 2rem;
   #about .img-container {
     margin-bottom: 10%;
   }
+  .img-container .button-container-dark-background{
+    margin: 30px auto 0px auto;
+  }
+
+
   #skill-section{
     display: flex;
     flex-flow:column wrap;
@@ -2269,9 +2257,7 @@ font-size: 2rem;
     flex-flow: column wrap;
     width: 100%;
   }
-  .icon-container .icon-link {
-    font-size: 1.875rem;
-   }
+
   .about-container .text-container{
     width: 100%;
   }
@@ -2279,9 +2265,7 @@ font-size: 2rem;
     width: 100%;
   }
   .about-long .img-container img{width: 80%;}
-  .img-container .buttons a{
-    font-size: 0.75rem;
-  }
+
   #site-hero-dark .inside h2 , #site-hero-light .inside h2{
     font-size: 2.5rem;
   }
@@ -2338,7 +2322,12 @@ font-size: 2rem;
     width: 60%;
   }
   h3 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
+  }
+  .button-container-dark-background button,
+  .button-container-light-background button{
+    padding: 7px 12px;
+    border-radius: 10px;
   }
   #home .inside{
     width: 90%;
@@ -2360,10 +2349,10 @@ font-size: 2rem;
   .about-long .img-container{
   margin-bottom: 0px;;
  }
- .img-container .buttons{
-  margin-bottom: 20px;
- }
 
+ .img-container .button-container-dark-background button{
+  padding: 7px 50px;
+}
   .skill-container{
     width: 80%;
   }
@@ -2388,9 +2377,6 @@ font-size: 2rem;
   }
  .overview-wrapper{
    width: 90%;
-  }
-  .buttons button {
-    padding: 4px 7px;
   }
 
   #wrapper-datenschutz{
@@ -2425,10 +2411,6 @@ font-size: 2rem;
     padding: 10px;
   }
 
-  .pre-back-buttons button{
-    padding: 4px 9px;
-    margin: 40px 20px 20px 20px;
-  }
   .prev,
   .next {
   top: 40%;

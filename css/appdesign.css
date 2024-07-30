@@ -1,10 +1,15 @@
 :root {
-  --maincolor: rgba(34, 34, 34, 1);
+  --maincolor: #222222;
   --maincolor-darker: rgb(22, 22, 22);
   --maincolor-lighter: rgb(51, 51, 51);
   --secondcolor: #bfac76;
   --whitecolor: rgba(208, 208, 208, 1);
   --accentcolor: rgb(165, 135, 78);
+}
+
+p {
+  color: white;
+  text-align: left;
 }
 
 #wrapper-project-appdesign {
@@ -95,13 +100,13 @@
   color: var(--secondcolor);
   padding-top: 0;
 }
-
 .assets {
   background-color: rgba(51, 51, 51, 0.95);
-  border-radius: 50px;
+  border-radius: 30px;
   padding: 50px;
   margin-bottom: 50px;
 }
+
 .assets p {
   text-align: left;
   color: white;
@@ -314,12 +319,16 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1050px) {
   .project-appdesign-description {
-    width: 40%;
+    width: 42%;
   }
+
 }
 @media (max-width: 850px) {
+  .project-appdesign-description {
+    width: 41%;
+  }
   .appdesign-colors-text-container,
   .appdesign-textfield,
   .appdesing-fontstyles {
@@ -344,6 +353,22 @@
   .project-appdesign-description {
     width: 100%;
   }
+  .assets{
+    padding: 20px;
+  }
+
+  .assets-interaction {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .assets-interaction div{
+    width: 100%;
+    padding: 10px;
+  }
   .project-appdesign-taskdescription .project-appdesign-description:first-child {
     order: 0;
   }
@@ -364,6 +389,10 @@
   }
 }
 @media (max-width: 480px) {
+  .assets hr {
+    width: 100%;
+    margin-bottom: 50px;
+  }
   .project-text-container-appdesign {
     border-radius: 100px 5px;
   }
@@ -485,3 +514,237 @@
 .demo:hover {
   opacity: 1;
 }
+
+
+
+/**************/
+
+#wrapper-project-webdev,
+#wrapper-project-wordpress {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1300px;
+}
+
+.project-webdev-first-section,
+.project-wordpress-first-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: var(--maincolor);
+}
+
+.project-webdev-img,
+.project-wordpress-img {
+  width: 60%;
+  align-self: flex-end;
+}
+
+.project-text-container-webdev,
+.project-text-container-wordpress {
+  width: 100%;
+  align-self: flex-start;
+  border-radius:15px;
+  padding: 20px 30px 60px 30px;
+}
+
+.project-text-container-webdev h2,
+.project-text-container-wordpress h2 {
+ text-align: left;
+}
+
+.project-text-container-webdev .smallCaps,
+.project-text-container-wordpress .smallCaps {
+  font-size: 1.75rem;
+  font-variant: small-caps;
+  color: white;
+}
+
+.project-text-container-webdev h3,
+.project-text-container-wordpress h3{
+ color: white;
+ text-align: left;
+ font-variant: normal;
+}
+
+.assets-description-container .img-description,
+.assets-interaction-cart .img-description{
+  text-align: center;
+}
+
+.assets-plugins{
+ display: flex;
+ flex-flow: row wrap;
+ gap: 50px;
+ margin-top: 50px;
+ padding-top: 50px;
+ border-top: 1px solid var(--secondcolor);
+}
+
+.assets-description-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.assets-textfield,
+.assets-interaction-cart{
+ display: flex;
+ flex-flow: column wrap;
+ gap: 50px;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+}
+
+.assets-description-container div{
+ display: flex;
+ flex-flow: column wrap;
+ width: 28%;
+ gap: 15px;
+ background-color: var(--maincolor);
+ padding: 20px;
+ border-radius: 15px;
+}
+
+.assets-textfield div,
+.assets-interaction-cart div{
+ display: flex;
+ flex-flow: column wrap;
+ width: 100%;
+ gap: 15px;
+ background-color: var(--maincolor);
+ padding: 40px 20px;
+ border-radius: 15px;
+}
+
+
+.assets-interaction-cart img,
+.assets-description-container img{
+ border-radius: 10px;
+ flex: 1;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.lightbox-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+.lightbox-img {
+  max-width: 90%; 
+  max-height: 90%; 
+  margin: auto; 
+  cursor: pointer;
+}
+
+/*****WEBDEVELOPMENT************/
+
+.webdesign-barrierefrei-list,
+.webdesign-barrierefrei-list li{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.assets-textfield h4{
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.p-color{
+  color: var(--secondcolor);
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+}
+
+.webdesign-barrierefrei-list{
+  color: white;
+}
+.webdesign-barrierefrei-list li{
+  color: white;
+  list-style: circle;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .project-wordpress-description,
+  .project-webdev-description {
+    width: 40%;
+  }
+  .assets-description-container div{
+    width: 40%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .assets-description-container div{
+    width: 100%;
+  }
+
+  .project-webdev-img,
+  .project-wordpress-img {
+    width: 100%;
+    align-self: center;
+  }
+  .project-wordpress-first-section,
+  .project-webdev-first-section {
+    padding:10px;
+    margin-bottom: 100px;
+  }
+
+  .project-text-container-webdev,
+  .project-text-container-wordpress {
+    align-self: center;
+    padding: 20px 10px;
+  }
+
+  .assets-textfield div,
+  .assets-interaction-cart div{
+    padding: 10px;
+   } 
+}
+
+@media (max-width: 480px) {
+  .project-text-container-webdev,
+  .project-text-container-wordpress {
+    border-radius: 100px 5px;
+  }
+  .project-webdev-img img,
+  .project-wordpress-img img {
+    max-width: 100%;
+  } 
+  .p-color{
+    font-size: 1rem;
+  }
+}
+
