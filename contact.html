@@ -7,6 +7,7 @@
  <meta name="description" content="Anne Dalchow - Contact">
  <link href="css/style.css" rel="stylesheet" media="all">
  <link rel="preload" fetchpriority="high" as="image" href="bilder/hero-dark.png" type="image/webp">
+
 </head>
 
 <body>
@@ -55,9 +56,11 @@
 
  <!--------CONTACT-------------------------->
 
+ <iframe src="/php/kontakt.php" id="idIframe" onload="iframeLoaded()" style="border: none; width:100%;" allowfullscreen scrolling="no"> </iframe>
+<!--
 <section id="contact">
   <div class="contact-img">
-    <img src="bilder/contactme_Zeichenfläche 1.svg" alt="">
+    <img src="bilder/contactme_Zeichenfläche_1.svg" alt="">
   </div>
   <div class="contact-textbox">
     <p>Feel free to contact me</p>
@@ -74,6 +77,7 @@
      <a href="https://www.linkedin.com/in/anne-dalchow/"><img src="bilder/minimize/linkedIn-01.svg" alt="LinkedIn Icon"></a>
     </div>
   </div>
+-->
 
 
 
@@ -95,7 +99,12 @@
  </div>
  -->
 
+
+<!--
 </section>
+-->
+
+
 
 </main>
 <!--------FOOTER-------------------------->
@@ -110,5 +119,17 @@
   </nav>
   <div class="top"><a href="#top">&#8657;</a></div>
 </footer>
+
+
+<script type="text/javascript">
+  function iframeLoaded() {
+      var iFrameID = document.getElementById('idIframe');
+      if(iFrameID) {
+            
+            iFrameID.height = "";
+            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+      }   
+  }
+</script>
 </body>
 </html>

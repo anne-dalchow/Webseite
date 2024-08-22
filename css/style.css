@@ -112,31 +112,32 @@ button{
   gap: 40px;
 
 }
-.button-container-dark-background button{
+.button-container-dark-background .button{
   cursor: pointer;
   padding: 12px 22px;
   border: 1px solid var(--secondcolor);
   border-radius: 15px;
   background-color: var(--maincolor-lighter);
   color: white;
+  width: max-content;
 }
 
-.button-container-dark-background a button:hover {
+.button-container-dark-background .button:hover {
   background-color: var(--secondcolor);
   color: var(--maincolor-darker);
  }
 
-.button-container-light-background button{
+.button-container-light-background .button{
   cursor: pointer;
   padding: 12px 22px;
   border: 1px solid var(--maincolor-darker);
   border-radius: 15px;
 }
 
-.button-container-light-background a{
+.button-container-light-background .button{
   color: var(--maincolor-darker);
 }
-.button-container-light-background a button:hover {
+.button-container-light-background .button:hover {
  background-color: var(--secondcolor);
 }
 
@@ -206,7 +207,7 @@ hr {
   min-height: 90vh;
 }
 
-.button-container-light-background button,.button-container-dark-background button,#work-img .work-textfield button,.pre-back-buttons button, .button-work, .column img, .column3 img{transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;}
+.button-container-light-background .button,.button-container-dark-background .button,.pre-back-buttons .button, .button-work, .column img, .column3 img{transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;}
 
 
 /********* 1.2 Fonts ************/
@@ -548,7 +549,7 @@ ul.breadcrumb li a:hover {
 /**************** 2.1 HOME ****************/
 
 #home {
-  background-image: url("/bilder/Vorschau/UX Design-01.png");
+  background-image: url("/bilder/Vorschau/UX_Design_01.png");
   background-repeat: no-repeat;
   background-size:100%;
   background-attachment: fixed;
@@ -566,6 +567,16 @@ ul.breadcrumb li a:hover {
   background:  rgba(34, 34, 34, 0.8);
 }
 
+@keyframes slidein {
+
+  from {
+    transform: translateX(-1500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+ }
+
 #home .inside{
   max-width: 1400px;
   margin: 0 auto 0 auto;
@@ -574,6 +585,18 @@ ul.breadcrumb li a:hover {
   align-items: center;
   justify-content: center;
   gap: 50px;
+}
+
+.textfield-home h1{
+  animation: slidein 2s ease-in-out;
+}
+.textfield-home h2,
+.textfield-home hr{
+  animation: slidein 2.1s ease-in-out;
+}
+
+.textfield-home .textbox{
+  animation: slidein 2.2s ease-in-out;
 }
 
 .textfield-home{
@@ -796,10 +819,31 @@ font-family: 'Poppins', sans-serif;
   border-radius: 30px;
 }
 
+
+@keyframes slideinleft {
+
+  from {
+    transform: translateX(-1500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+ }
+ @keyframes slideinright {
+
+  from {
+    transform: translateX(1500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+ }
+
 .about-long .text-container {
   width: 40%;
   text-align: left;
   padding-bottom: 50px;
+  animation: slideinleft 1.5s ease forwards;
 }
 
 .about-long .text-container p{
@@ -814,6 +858,7 @@ font-family: 'Poppins', sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  animation: slideinright 3s ease forwards;
 }
 
 .img-container img{
@@ -831,10 +876,8 @@ font-family: 'Poppins', sans-serif;
   justify-content: center;
 }
 
-.img-container .button-container-dark-background button{
+.img-container .button-container-dark-background .button{
   padding: 12px 100px;
-  background-color: var(--accentcolor);
-  color: var(--maincolor-darker);
 }
 
 .skill-header h3{
@@ -1241,16 +1284,17 @@ font-family: 'Poppins', sans-serif;
   justify-content: center;
   align-content: center;
 }
-.pre-back-buttons button{
+.pre-back-buttons .button{
   cursor: pointer;
   padding: 12px 22px;
   background-color: var(--maincolor-darker);
   border: 1px solid var(--secondcolor);
   border-radius: 15px;
   color: white;
+  width: max-content;
 }
 
-.pre-back-buttons button:hover{
+.pre-back-buttons .button:hover{
   background-color: var(--secondcolor);
   color: var(--maincolor-darker);
 }
@@ -1468,7 +1512,7 @@ font-family: 'Poppins', sans-serif;
  color: var(--whitecolor);
 }
 
-.button-webdesign-project button{
+.button-webdesign-project {
   padding: 10px 15px;
   background-color: var(--secondcolor);
   border-radius: 15px;
@@ -1987,7 +2031,7 @@ form textarea {
   align-items: center;
   width: 90%;
   }
-  .about-long .text-container{width: 90%;}
+  .about-long .text-container{width: 90%; margin-top: 50px;}
   .about-long .text-container h3{padding-top: 0;}
   
   .about-long .img-container {
@@ -2324,8 +2368,8 @@ font-size: 2rem;
   h3 {
   font-size: 1.5rem;
   }
-  .button-container-dark-background button,
-  .button-container-light-background button{
+  .button-container-dark-background .button,
+  .button-container-light-background .button{
     padding: 7px 12px;
     border-radius: 10px;
   }
@@ -2350,7 +2394,7 @@ font-size: 2rem;
   margin-bottom: 0px;;
  }
 
- .img-container .button-container-dark-background button{
+ .img-container .button-container-dark-background .button{
   padding: 7px 50px;
 }
   .skill-container{

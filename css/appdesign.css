@@ -132,9 +132,8 @@ p {
   font-size: larger;
   text-align: center;
   color: var(--secondcolor);
-}
-.italic-font hr {
-  margin: 10px auto 20px auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .p-color{
@@ -230,10 +229,10 @@ p {
   width: 45%;
 }
 
-.appdesing-fontstyles {
+.appdesign-fontstyles {
   width: 50%;
 }
-.appdesing-fontstyles img {
+.appdesign-fontstyles img {
   width: 100%;
   border-radius: 30px;
 }
@@ -331,7 +330,7 @@ p {
   }
   .appdesign-colors-text-container,
   .appdesign-textfield,
-  .appdesing-fontstyles {
+  .appdesign-fontstyles {
     width: 100%;
   }
   .project-text-container-appdesign {
