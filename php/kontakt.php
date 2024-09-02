@@ -560,6 +560,7 @@ function sendMyMail($fromMail, $fromName, $toMail, $subject, $content, $attachme
 
 
 <body>
+	
 
 	<div>
 		<form id="kontaktformular" class="kontaktformular" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>" method="post" enctype="multipart/form-data">

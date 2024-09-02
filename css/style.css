@@ -1768,20 +1768,21 @@ font-family: 'Poppins', sans-serif;
 /******************************** 6. CONTACT SITE ********************************/
 
 #contact {
+  max-width: 1200px;
   display: flex;
   flex-flow: row wrap;
-  max-width: 1200px;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: start;
   margin: 0 auto 150px auto;
-  padding: 10px;
+  padding: 20px;
+}
+.contact-text{
+  width: 40%;
 }
 .contact-img{
-  width: 50%;
   padding: 10px;
 }
 .contact-textbox{
-  width: 35%;
   display: flex;
   flex-flow: column;
   text-align: left;
@@ -1809,6 +1810,7 @@ font-family: 'Poppins', sans-serif;
 
 .contact-form{
   width: 50%;
+  height: auto;
 }
 form input, textarea {
   font-family: Arial, Helvetica, sans-serif;
@@ -2288,7 +2290,22 @@ font-size: 2rem;
   }
 
   /*** End ***/
-
+  #contact {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact-text{
+    width: 100%;
+  }
+  .contact-textbox{
+    text-align: center;
+  }
+  .contact-form{
+    width: 100%;
+  }
 }
 
 /*************** MEDIA QUERRY MOBIL 650px *********************/
@@ -2329,21 +2346,8 @@ font-size: 2rem;
   font-size: 1rem;
   }
 
-  #contact {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 20px;
-  }
-  .contact-textbox{
-    width: 100%;
-    text-align: center;
-  }
-  .contact-form{
-    width: 100%;
-  }
-  .contact-img{
-    width: 90%;
-  }
+
+
   .link-icons{
     justify-content: center;
   }
